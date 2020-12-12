@@ -134,7 +134,7 @@ The code for your ESP32 and how to configure it to control a relay through MQTT 
 
 ### Telegram
 Telegram can be used to add the ability to control NodeRED from your phone and automate more processes but is not required for use. You could stricktly use the NodeRED dashboard to control your system.<br/>
-My current commands that I can use are:<br/>
+#### Commands <br/>
 * `/water` - records that I drank a bottle of water
 * `/poop` - records that I took a poop
 * `/piss` - records that I took a pee
@@ -144,11 +144,17 @@ My current commands that I can use are:<br/>
 * `doorlightoff` - turns off the light by the door
 * `bedsidelampon` - turns on the light by my bed
 * `bedsidelampoff` - turns off the light by my bed
+#### Notifications <br/>
+* `Raspberry Pi is over 65 degree C` - Tells me when the Raspberry Pi has reached temperatures over 65C. 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 The system can be utilized in two ways, through the Telegram-Bot or through the NodeRED Dashboard.<br/>
-_For more examples, please refer to the [Documentation](https://example.com)_
+#### Usage through Telegram
+Telegram sends me [notifications](#notifications) and I can send it [commands](#commands).
+
+#### Usage through the NodeRED Dashboard
+The NodeRED Dashboard can be used to control the system through buttons, text boxes and switches, but also displays alot of information.
 
 
 
