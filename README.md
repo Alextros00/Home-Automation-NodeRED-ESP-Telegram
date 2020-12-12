@@ -98,11 +98,11 @@ The hardware below you will need to have or to purchase.
 <!-- Mosquitto -->
 ### Mosquitto
 The Mosquitto broker will need to be installed on your Raspberry Pi for the MQTT protocol to work.
-1. UpdatE your Raspberry Pi
+1. Update your Raspberry Pi<br/>
 ```sudo apt-get update```
-2. Install Mosquitto
+2. Install Mosquitto<br/>
 ```sudo apt-get install mosquitto```
-3. Install Mosquitto Client
+3. Install Mosquitto Client<br/>
 ```sudo apt-get install mosquitto-clients```
 
 Be sure to note for later:
@@ -121,7 +121,7 @@ This is an example of how to list things you need to use the software and how to
   ```
 
 ### ESP32
-What ESP32 should not matter much. Be sure you have a pinout of the device as you will need to choose your own pin to use.
+What ESP32 should not matter much. Be sure you have a pinout of the device as you will need to choose your own pin to use.<br/>
 How to configure your ESP32 to control a relay through MQTT can be found [here](https://github.com/Alextros00/).
 
 ### Telegram
@@ -129,25 +129,25 @@ Telegram can be used to add the ability to control NodeRED from your phone and a
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-The system can be utilized in two ways, through the Telegram-Bot or through the NodeRED Dashboard.
+The system can be utilized in two ways, through the Telegram-Bot or through the NodeRED Dashboard.<br/>
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
-See the [open issues](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/issues) for a list of proposed features (and known issues).<br/>
 This project will continue to grow in my free time to automate everything... except working out... that you just have to do.
 
 <!-- LICENSE -->
 ## License
-Distributed under the MIT License. See `LICENSE` for more information but basically you can take my code and use it but I would appreciate a coffee!
+Distributed under the MIT License. See `LICENSE` for more information but basically you can take my code but I would appreciate a coffee!
 
 <!-- CONTACT -->
 ## Contact
 ##### Alex Trostle
 Alextros00@gmail.com - [LinkedIn](https://www.linkedin.com/in/alex-trostle/) - [Instagram](https://www.instagram.com/alextros0/) <br />
-<a href="https://www.buymeacoffee.com/AlexTrostle" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px     rgba(190,190, 190, 0.5) !important;" ></a>
+<a href="https://www.buymeacoffee.com/AlexTrostle" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px     rgba(190,190, 190, 0.5) !important;" ></a><br/>
 Project Link: [https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram)
 
 <!-- ACKNOWLEDGEMENTS -->
