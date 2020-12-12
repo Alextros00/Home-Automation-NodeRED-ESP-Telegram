@@ -46,7 +46,9 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#mosquitto">Mosquitto</a></li>
+        <li><a href="#nodered">NodeRED</a></li>
+        <li><a href="#nodered">Telegram</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -61,25 +63,43 @@
 ## About The Project
 This project is about automating all aspects of my home that I can. Why turn on my lights every morning at 7am and turn them off every night at 10:45pm when it can be done for me! I want to spend as little time as possible dealing with repetitive tasks and focusing on the things that matter most to me.
 
+This project consists of many smaller projects. Here is where they are all put together and additional features are added.
+
 ### Built With
 There were many parts to this project. Some sub-projects that I did in order to build up to this complexity can be found on my [here](https://github.com/Alextros00).
-The main system components were:
+##### The main system components were:
 * [Raspberry Pi 4](#raspberry-pi)
   * [Mosquitto](#mosquitto)
   * [NodeRED](#nodered)
 * [ESP32](#esp32)
 * [Telegram](#telegram)
 
-
-
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+These steps will take you through getting your own project up and running.
 
 ### Prerequisites
+All of the software used is free and open source.
+The hardware below you will need to have or purchase.
+*Smartphone
+*[Raspberry Pi 4]()
+*At least one [ESP32]()
+*
+*
+
+Raspberry Pi 4 needs to be running Raspbian. How to get your Raspberry Pi running Raspbian operating system can be found [here](url).
+The Raspberry Pi 4 also needs to be connected to and using a 2.4GHz network. This is because the ESP32's currently(Dec 2020) cannot connect to 5GHz networks.
+
+### Mosquitto
+The Mosquitto broker will need to be installed on your Raspberry Pi for the MQTT protocol to work. 
+Be sure to note for later:
+*The port of your mosquitto broker. I use Port 1883
+*The server your mosquitto broker is running on. If it is running on your Raspberry Pi then it will be the ip address of your Raspberry Pi.
+
+ [To install mosquitto follow these steps.](insert Mosquitto install steps here).
+
+### NodeRED
+[NodeRED](http://nodered.org) will need to be installed on your Raspberry Pi. To do so follow the steps [here](insert node red install steps here).
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
@@ -87,74 +107,51 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-### Installation
+### ESP32
+What ESP32 should not matter much. Be sure you have a pinout of the device as you will need to choose your own pin to use.
+How to configure your ESP32 to control a relay through MQTT can be found [here]().
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-
+### Telegram
+Telegram can be used to add the ability to control NodeRED from your phone and automate more processes but is not required for use. You could stricktly use the NodeRED dashboard to control your system.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+The system can be utilized in two ways, through the Telegram-Bot or through the NodeRED Dashboard.
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
-
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
 
 <!-- LICENSE -->
 ## License
-
 Distributed under the MIT License. See `LICENSE` for more information.
-
-
 
 <!-- CONTACT -->
 ## Contact
 ##### Alex Trostle
-Your Name
-email@example.com
-[@your_linkedIn]()
-[@your_Instagram]()
-[@your_portfollium]()
+Alextros00@gmail.com - [LinkedIn]() - [Instagram]()
 
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
+##### ESP
+* []()
+* []()
+##### NodeRED
+* []()
+* []()
+##### Other
+* []()
+* []()
+
+Previous Links:
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
@@ -181,4 +178,3 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [license-url]: https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/alex-trostle/
-[product-screenshot]: images/screenshot.png
