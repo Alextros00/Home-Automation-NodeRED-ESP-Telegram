@@ -135,15 +135,15 @@ The code for your ESP32 and how to configure it to control a relay through MQTT 
 ### Telegram
 Telegram can be used to add the ability to control NodeRED from your phone and automate more processes but is not required for use. You could stricktly use the NodeRED dashboard to control your system.<br/>
 My current commands that I can use are:<br/>
-* `/water`
-* `/poop`
-* `/piss`
-* `/whoishome`
-* `/alive`
-* `doorlighton`
-* `doorlightoff`
-* `bedsidelampon`
-* `bedsidelampoff`
+* `/water` - records that I drank a bottle of water
+* `/poop` - records that I took a poop
+* `/piss` - records that I took a pee
+* `/whoishome` - replys with who is on my home wifi
+* `/alive` - replys with what devices are responding on the system
+* `doorlighton` - turns on the light by the door 
+* `doorlightoff` - turns off the light by the door
+* `bedsidelampon` - turns on the light by my bed
+* `bedsidelampoff` - turns off the light by my bed
 
 <!-- USAGE EXAMPLES -->
 ## Usage
