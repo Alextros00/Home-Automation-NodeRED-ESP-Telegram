@@ -68,12 +68,11 @@ This project consists of many smaller projects. Here is where they are all put t
 ### Built With
 There were many parts to this project. Some sub-projects that I did in order to build up to this complexity can be found on my [here](https://github.com/Alextros00).
 ##### The main system components were:
-* [Raspberry Pi 4](link to buy). I us 8GB but don't really think it is required.
-  * [Mosquitto](link to buy)
-  * [NodeRED](link to buy)
-* [ESP32](link to buy)
-  * [3.3v Relay](link to buy)
-* [Telegram](link to buy)
+* [Raspberry Pi 4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/?resellerType=home&variant=raspberry-pi-4-model-b-8gb). I us 8GB but don't really think it is required.
+  * [MQTT through Mosquitto](https://mosquitto.org/)
+  * [NodeRED](https://nodered.org/)
+* [ESP32](https://www.espressif.com/en/products/socs/esp32)
+* [Telegram](https://telegram.org/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
