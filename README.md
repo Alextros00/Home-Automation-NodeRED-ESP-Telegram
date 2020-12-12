@@ -1,4 +1,6 @@
 # Home-Automation-NodeRED-ESP-Telegram
-#### Hardware: Raspberry Pi 4, ESP32s, ESPCAMs, ESP-EYEs, TI LPSTK
-#### Software: NodeRED, ESP-IDF, Arduino IDE, Telegram
-#### Other: Wifi, TCP, MQTT, Texting, Email
+<a href="https://www.buymeacoffee.com/gbraad" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
+Hardware: Raspberry Pi 4, ESP32s, ESPCAMs, ESP-EYEs, TI LPSTK /n
+Software: NodeRED, ESP-IDF, Arduino IDE, Telegram, Mosquitto
+Other: Wifi, TCP, MQTT, Texting, Email
