@@ -114,7 +114,7 @@ Be sure to note for later:
 [NodeRED](http://nodered.org) will need to be installed on your Raspberry Pi. To do so follow [these steps](https://nodered.org/docs/getting-started/local).
 
 The only flow that is required to start controlling an ESP32 is the ESP32 MQTT flow. Once that is done you may want to [skip to ESP32 setup](#ESP32)
-![NodeRED ESP32](images/NodeRED3.png)
+![NodeRED ESP32](images/NodeRED3.png){:height="20%" width="50%"}
 
 #### Example Flows
 * This flow will determine who is on the wifi that the Raspberry Pi is connected to. The flow will start by either by sending a command to the telgram bot or by clicking a button on the NodeRed dashboard. If you only want to use one one of these option you can delete them. You could also add an insert block on an interval to scan the wifi network on a regular basis. Once the flow has run there are one of two outputs. Either a dislay on the NodeRED dashboard or messages from the Telegram Bot.
