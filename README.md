@@ -68,11 +68,12 @@ This project consists of many smaller projects. Here is where they are all put t
 ### Built With
 There were many parts to this project. Some sub-projects that I did in order to build up to this complexity can be found on my [here](https://github.com/Alextros00).
 ##### The main system components were:
-* [Raspberry Pi 4](#raspberry-pi)
-  * [Mosquitto](#mosquitto)
-  * [NodeRED](#nodered)
-* [ESP32](#esp32)
-* [Telegram](#telegram)
+* [Raspberry Pi 4](link to buy). I us 8GB but don't really think it is required.
+  * [Mosquitto](link to buy)
+  * [NodeRED](link to buy)
+* [ESP32](link to buy)
+  * [3.3v Relay](link to buy)
+* [Telegram](link to buy)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -84,8 +85,7 @@ The hardware below you will need to have or purchase.
 *Smartphone
 *[Raspberry Pi 4]()
 *At least one [ESP32]()
-*
-*
+*[ESP-IDF]() installed. You do not need to know how to use it.
 
 Raspberry Pi 4 needs to be running Raspbian. How to get your Raspberry Pi running Raspbian operating system can be found [here](url).
 The Raspberry Pi 4 also needs to be connected to and using a 2.4GHz network. This is because the ESP32's currently(Dec 2020) cannot connect to 5GHz networks.
@@ -117,8 +117,6 @@ Telegram can be used to add the ability to control NodeRED from your phone and a
 <!-- USAGE EXAMPLES -->
 ## Usage
 The system can be utilized in two ways, through the Telegram-Bot or through the NodeRED Dashboard.
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 
@@ -126,6 +124,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+This project will continue to grow in my free time to automate everything... except working out... that you just have to do.
 
 <!-- LICENSE -->
 ## License
