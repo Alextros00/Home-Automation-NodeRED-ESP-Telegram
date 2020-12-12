@@ -68,49 +68,61 @@ This project consists of many smaller projects. Here is where they are all put t
 
 ### Built With
 There were many parts to this project. Some sub-projects that I did in order to build up to this complexity can be found on my [here](https://github.com/Alextros00).
-##### The main system components were:
-* [Raspberry Pi 4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/?resellerType=home&variant=raspberry-pi-4-model-b-8gb). I us 8GB but don't really think it is required.
+
+#### Main Components
+* [Raspberry Pi 4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/?resellerType=home&variant=raspberry-pi-4-model-b-8gb). <sup>&dagger;</sup>
   * [MQTT through Mosquitto](https://mosquitto.org/)
   * [NodeRED](https://nodered.org/)
 * [ESP32](https://www.espressif.com/en/products/socs/esp32)
 * [Telegram](https://telegram.org/)
 
+<sup>&dagger;: I us 8GB but don't really think it is required.</sup>
+
 <!-- GETTING STARTED -->
 ## Getting Started
 These steps will take you through getting your own project up and running.
 
+<!-- Prerequisites -->
 ### Prerequisites
 The software used is free and mostly open source.
-* [ESP-IDF]() installed. <sup>&dagger;</sup> <br />
+* [ESP-IDF]() installed. <sup>&dagger;</sup> <br/>
 <sup>&dagger;: You do not need to know how to use it.</sup>
 
 The hardware below you will need to have or to purchase.
 * Smartphone
 * At least one [ESP32]()
-* [Raspberry Pi 4]() <sup>&dagger;</sup> <sup>&Dagger;</sup> <br />
-<sup>&dagger;: Raspberry Pi 4 needs to be running [Raspbian Operating System](linke to how to do).</sup><br>
-<sup>&Dagger;: Needs to be connected to and using a 2.4GHz network. This is because the ESP32's currently(Dec 2020) cannot connect to 5GHz networks.</sup>
+* [Raspberry Pi 4]() <sup>&dagger;</sup> <sup>&Dagger;</sup> <br/>
+<sup>&dagger;: Raspberry Pi 4 needs to be running [Raspbian Operating System](linke to how to do).</sup><br/>
+<sup>&Dagger;: Needs to be connected to and using a 2.4GHz network. This is because the ESP32's currently(Dec 2020) cannot connect to 5GHz networks.</sup><br/>
 
+<!-- Mosquitto -->
 ### Mosquitto
-The Mosquitto broker will need to be installed on your Raspberry Pi for the MQTT protocol to work. 
+The Mosquitto broker will need to be installed on your Raspberry Pi for the MQTT protocol to work.
+1. UpdatE your Raspberry Pi
+```sudo apt-get update```
+2. Install Mosquitto
+```sudo apt-get install mosquitto```
+3. Install Mosquitto Client
+```sudo apt-get install mosquitto-clients```
+
 Be sure to note for later:
-*The port of your mosquitto broker. I use Port 1883
+*The port of your mosquitto broker. Will automatically be Port 1883
 *The server your mosquitto broker is running on. If it is running on your Raspberry Pi then it will be the ip address of your Raspberry Pi.
 
- [To install mosquitto follow these steps.](insert Mosquitto install steps here).
-
+<!-- NodeRED -->
 ### NodeRED
-[NodeRED](http://nodered.org) will need to be installed on your Raspberry Pi. To do so follow the steps [here](insert node red install steps here).
+[NodeRED](http://nodered.org) will need to be installed on your Raspberry Pi. To do so follow [these steps](https://nodered.org/docs/getting-started/local).
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
-  npm install npm@latest -g
+  sudo apt-get update
+  sudo apt-get install mosquitto
   ```
 
 ### ESP32
 What ESP32 should not matter much. Be sure you have a pinout of the device as you will need to choose your own pin to use.
-How to configure your ESP32 to control a relay through MQTT can be found [here]().
+How to configure your ESP32 to control a relay through MQTT can be found [here](https://github.com/Alextros00/).
 
 ### Telegram
 Telegram can be used to add the ability to control NodeRED from your phone and automate more processes but is not required for use. You could stricktly use the NodeRED dashboard to control your system.
@@ -124,7 +136,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- ROADMAP -->
 ## Roadmap
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/issues) for a list of proposed features (and known issues).
 This project will continue to grow in my free time to automate everything... except working out... that you just have to do.
 
 <!-- LICENSE -->
@@ -134,9 +146,7 @@ Distributed under the MIT License. See `LICENSE` for more information but basica
 <!-- CONTACT -->
 ## Contact
 ##### Alex Trostle
-Alextros00@gmail.com
-[LinkedIn](https://www.linkedin.com/in/alex-trostle/)
-[Instagram](https://www.instagram.com/alextros0/)
+Alextros00@gmail.com - [LinkedIn](https://www.linkedin.com/in/alex-trostle/) - [Instagram](https://www.instagram.com/alextros0/) <br />
 <a href="https://www.buymeacoffee.com/AlexTrostle" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px     rgba(190,190, 190, 0.5) !important;" ></a>
 Project Link: [https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram)
 
