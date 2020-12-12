@@ -81,13 +81,13 @@ These steps will take you through getting your own project up and running.
 
 ### Prerequisites
 The software used is free and mostly open source.
-* [ESP-IDF]() installed. <sup>&dagger;</sup>
+* [ESP-IDF]() installed. <sup>&dagger;</sup> <br />
 <sup>&dagger;: You do not need to know how to use it.</sup>
 
 The hardware below you will need to have or to purchase.
 * Smartphone
 * At least one [ESP32]()
-* [Raspberry Pi 4]() <sup>&dagger;</sup> <sup>&Dagger;</sup>
+* [Raspberry Pi 4]() <sup>&dagger;</sup> <sup>&Dagger;</sup> <br />
 <sup>&dagger;: Raspberry Pi 4 needs to be running [Raspbian Operating System](linke to how to do).</sup><br>
 <sup>&Dagger;: Needs to be connected to and using a 2.4GHz network. This is because the ESP32's currently(Dec 2020) cannot connect to 5GHz networks.</sup>
 
