@@ -106,8 +106,8 @@ The Mosquitto broker will need to be installed on your Raspberry Pi for the MQTT
 ```sudo apt-get install mosquitto-clients```
 
 Be sure to note for later:
-*The port of your mosquitto broker. Will automatically be Port 1883
-*The server your mosquitto broker is running on. If it is running on your Raspberry Pi then it will be the ip address of your Raspberry Pi.
+* The port of your mosquitto broker. Will automatically be Port 1883
+* The server your mosquitto broker is running on. If it is running on your Raspberry Pi then it will be the ip address of your Raspberry Pi.
 
 <!-- NodeRED -->
 ### NodeRED
