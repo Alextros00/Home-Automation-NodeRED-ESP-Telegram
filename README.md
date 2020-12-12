@@ -48,7 +48,8 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#mosquitto">Mosquitto</a></li>
         <li><a href="#nodered">NodeRED</a></li>
-        <li><a href="#nodered">Telegram</a></li>
+        <li><a href="#esp32">ESP32</a></li>
+        <li><a href="#telegram">Telegram</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -127,15 +128,16 @@ This project will continue to grow in my free time to automate everything... exc
 
 <!-- LICENSE -->
 ## License
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE` for more information but basically you can take my code and use it but I would appreciate a coffee!
 
 <!-- CONTACT -->
 ## Contact
 ##### Alex Trostle
-Alextros00@gmail.com - [LinkedIn]() - [Instagram]()
-
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Alextros00@gmail.com
+[LinkedIn](https://www.linkedin.com/in/alex-trostle/)
+[Instagram](https://www.instagram.com/alextros0/)
+<a href="https://www.buymeacoffee.com/AlexTrostle" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px     rgba(190,190, 190, 0.5) !important;" ></a>
+Project Link: [https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
@@ -149,7 +151,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 * []()
 * []()
 
-Previous Links:
+Links used in the creation of this page:
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
