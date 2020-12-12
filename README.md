@@ -130,7 +130,7 @@ The only flow that is required to start controlling an ESP32 is the ESP32 MQTT f
 
 ### ESP32
 What ESP32 should not matter much. Be sure you have a pinout of the device as you will need to choose your own pin to use.<br/>
-How to configure your ESP32 to control a relay through MQTT can be found [here](https://github.com/Alextros00/).
+The code for your ESP32 and how to configure it to control a relay through MQTT can be found [here](https://github.com/Alextros00/ESP32-MQTT-Relay-Control-Project).
 
 ### Telegram
 Telegram can be used to add the ability to control NodeRED from your phone and automate more processes but is not required for use. You could stricktly use the NodeRED dashboard to control your system.
