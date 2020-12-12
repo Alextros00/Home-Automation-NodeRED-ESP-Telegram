@@ -12,7 +12,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Image of me laying on the floor covered in electronics" width="80" height="80">
   </a>
 
   <h3 align="center">Home Automation</h3>
