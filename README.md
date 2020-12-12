@@ -9,10 +9,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Automated Lifestyle</h3>
+  <h3 align="center">Home Automation</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A cheap way to automate anything and everything!
     <br />
     <a href="https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram"><strong>Explore the docs »</strong></a>
     <br />
