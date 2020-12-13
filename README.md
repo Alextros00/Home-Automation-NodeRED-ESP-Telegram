@@ -124,7 +124,7 @@ What ESP32 should not matter much. Be sure you have a pinout of the device as yo
 The code for your ESP32 and how to configure it to control a relay through MQTT can be found [here](https://github.com/Alextros00/ESP32-MQTT-Relay-Control-Project).
 
 ### Telegram
-Telegram can be used to add the ability to control NodeRED from your phone and automate more processes but is not required for use. You could stricktly use the NodeRED dashboard to control your system.<br/>
+Telegram adds the ability to control the system from your phone but is not required for use. You could stricktly use the NodeRED dashboard to control your system. In this implementation, Telegram does not directly control any devices but rather goes through NodeRED using the [node-red-contrib-telegrambot](https://flows.nodered.org/node/node-red-contrib-telegrambot) library.<br/>
 #### Commands <br/>
 * `/water` - records that I drank a bottle of water
 * `/poop` - records that I took a poop
