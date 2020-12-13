@@ -113,10 +113,9 @@ Be sure to note for later:
 ### NodeRED
 You will need [NodeRED](http://nodered.org) to be installed on your Raspberry Pi. To do so follow [these steps](https://nodered.org/docs/getting-started/local).
 
-The only flow that is required to start controlling an ESP32 is the ESP32 MQTT flow. The rest of my flows can be found on my NodeRED flow project.
+The only flow that is required to start controlling an ESP32 is the ESP32 MQTT flow. The rest of my flows can be found in the [wiki pages](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/wiki)
 <br/><img src="images/NodeRED3.png" width="50%" height="50%">
 
-#### Example Flows
 
 
 ### ESP32
