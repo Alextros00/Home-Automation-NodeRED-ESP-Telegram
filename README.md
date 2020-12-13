@@ -114,7 +114,7 @@ Be sure to note for later:
 [NodeRED](http://nodered.org) will need to be installed on your Raspberry Pi. To do so follow [these steps](https://nodered.org/docs/getting-started/local).
 
 The only flow that is required to start controlling an ESP32 is the ESP32 MQTT flow. Once that is done you may want to [skip to ESP32 setup](#ESP32)
-![NodeRED ESP32](images/NodeRED3.png){:height="700px" width="400px"}
+![NodeRED ESP32](images/NodeRED3.png)<img src="images/NodeRED3.png" width="100" height="100">
 
 #### Example Flows
 
