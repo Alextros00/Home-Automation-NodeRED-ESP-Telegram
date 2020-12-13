@@ -111,10 +111,10 @@ Be sure to note for later:
 
 <!-- NodeRED -->
 ### NodeRED
-[NodeRED](http://nodered.org) will need to be installed on your Raspberry Pi. To do so follow [these steps](https://nodered.org/docs/getting-started/local).
+You will need [NodeRED](http://nodered.org) to be installed on your Raspberry Pi. To do so follow [these steps](https://nodered.org/docs/getting-started/local).
 
-The only flow that is required to start controlling an ESP32 is the ESP32 MQTT flow. Once that is done you may want to [skip to ESP32 setup](#ESP32)
-<img src="images/NodeRED3.png" width="500" height="1000">
+The only flow that is required to start controlling an ESP32 is the ESP32 MQTT flow. The rest of my flows can be found on my NodeRED flow project.
+<br/><img src="images/NodeRED3.png" width="50%" height="50%">
 
 #### Example Flows
 
@@ -145,7 +145,7 @@ The system can be utilized in two ways, through the Telegram-Bot or through the 
 Telegram sends me [notifications](#notifications) and I can send it [commands](#commands).
 
 #### Usage through the NodeRED Dashboard
-The NodeRED Dashboard can be used to control the system through buttons, text boxes and switches, but also displays alot of information.
+The NodeRED Dashboard can be used to control the system through buttons, text boxes and switches, but also displays alot of information.<br/>
 
 
 
