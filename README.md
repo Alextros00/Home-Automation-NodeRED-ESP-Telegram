@@ -119,6 +119,7 @@ The only flow that is required to start controlling an ESP32 is the ESP32 MQTT f
 
 
 ### ESP32
+To clone this repository use something like ```git clone -b release/v3.2 --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32``` <br/>
 What ESP32 should not matter much. Be sure you have a pinout of the device as you will need to choose your own pin to use.<br/>
 The code for your ESP32 and how to configure it to control a relay through MQTT can be found [here](https://github.com/Alextros00/ESP32-MQTT-Relay-Control-Project).
 
