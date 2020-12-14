@@ -111,18 +111,27 @@ Be sure to note for later:
 
 <!-- NodeRED -->
 ### NodeRED
-You will need [NodeRED](http://nodered.org) to be installed on your Raspberry Pi. To do so follow [these steps](https://nodered.org/docs/getting-started/local).
+You will need [NodeRED](http://nodered.org) to be installed on your Raspberry Pi. To do so follow [these steps](https://nodered.org/docs/getting-started/local).<br/>
+The only flow that is required to start controlling an ESP32 is the ESP32 MQTT flow. The rest of my flows can be found in the [wiki pages](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/wiki)<br/>
+<img src="images/NodeRED3.png" width="50%" height="50%">
 
-The only flow that is required to start controlling an ESP32 is the ESP32 MQTT flow. The rest of my flows can be found in the [wiki pages](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/wiki)
-<br/><img src="images/NodeRED3.png" width="50%" height="50%">
-
-
-
+<!-- ESP32 -->
 ### ESP32
-To clone this repository use something like ```git clone -b release/v3.2 --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32``` <br/>
-What ESP32 should not matter much. Be sure you have a pinout of the device as you will need to choose your own pin to use.<br/>
+To clone this repository use ```git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32``` <br/>
+What ESP32 version or variant should not matter much. Be sure you have a pinout of the device as you will need to choose your own pin to use.<br/>
+Some that I use are:<br/>
+* ESP-WROOM-32
+* ESP-32S
+* ESP32-CAM
+* ESP-EYE
+#### ESP-WROOM-32 or ESP32S
 The code for your ESP32 and how to configure it to control a relay through MQTT can be found [here](https://github.com/Alextros00/ESP32-MQTT-Relay-Control-Project).
+#### ESP32-CAM
+I am currently waiting for my device to arrive.
+#### ESP-EYE
+Very cool device, have played with the code that is preloaded but struggling to work with. Much more advanced device and much less documentation online right now.
 
+<!-- Telegram -->
 ### Telegram
 Telegram adds the ability to control the system from your phone but is not required for use. You could stricktly use the NodeRED dashboard to control your system. In this implementation, Telegram does not directly control any devices but rather goes through NodeRED using the [node-red-contrib-telegrambot](https://flows.nodered.org/node/node-red-contrib-telegrambot) library.<br/>
 #### Commands <br/>
@@ -143,11 +152,8 @@ Telegram adds the ability to control the system from your phone but is not requi
 The system can be utilized in two ways, through the Telegram-Bot or through the NodeRED Dashboard.<br/>
 #### Usage through Telegram
 Telegram sends me [notifications](#notifications) and I can send it [commands](#commands).
-
 #### Usage through the NodeRED Dashboard
 The NodeRED Dashboard can be used to control the system through buttons, text boxes and switches, but also displays alot of information.<br/>
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
