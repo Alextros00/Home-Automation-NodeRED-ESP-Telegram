@@ -150,9 +150,9 @@ Depending on the project specific goal of your ESP32 device depends on how you w
 3. Open the configuration menu. It may take a minute to load.<br/>
    ```make menuconfig```
 4. Go to ```Serial flasher config```
-   	* Set ```Default serial port``` and set the port in which your ESP32 is connected<sup>&dagger;</sup><sup>&Dagger;</sup>
-	* Set the `Default baud rate` to `115200 baud` for the ESP32
-   <sup>&dagger;:Your serial port can be found using [this guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html).</sup><br/>
+   	* Set the `Default baud rate` to `115200 baud` for the ESP32
+	* Set ```Default serial port``` and set the port in which your ESP32 is connected<sup>&dagger;</sup><sup>&Dagger;</sup>
+   <br/><sup>&dagger;:Your serial port can be found using [this guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html).</sup><br/>
 <sup>&Dagger;:One problem I had was that it is not clearly documented that if using windows the port should be configured in the COMX for example COM0</sup><br/>
 6. Click `Save` -> `Ok` -> `Exit` -> `Exit` to get back to the main configuration screen<br/>
 7. Go to `Example Configuration`
@@ -167,8 +167,10 @@ Depending on the project specific goal of your ESP32 device depends on how you w
 8. Once done configuring the project exit out of the menu by clicking `Save` -> `Ok` -> `Exit` -> `Exit` -> `Exit` to go back to the terminal
 
 #### Flash and Monitor
-Use `make flash` to build and flash the project onto your device.<br/>
-Once the project has been flashed onto your device use `make monitor` to see logs from the device in real time<br/>
+Build and flash the project onto your device.<br/>
+```make flash```<br/>
+Monitor the logs of your device<br/>
+```make monitor```<br/>
 To exit the monitor us `Ctrl + ]` or `Ctrl` and  `]` at the same time
 
 
@@ -208,10 +210,8 @@ Distributed under the MIT License. See `LICENSE` for more information but basica
 
 <!-- CONTACT -->
 ## Contact
-##### Alex Trostle
-Alextros00@gmail.com - [LinkedIn](https://www.linkedin.com/in/alex-trostle/) - [Instagram](https://www.instagram.com/alextros0/) <br />
+##### Alex Trostle - [GitHub](https://github.com/Alextros00)[Email](Alextros00@gmail.com) - [LinkedIn](https://www.linkedin.com/in/alex-trostle/) - [Instagram](https://www.instagram.com/alextros0/) <br />
 <a href="https://www.buymeacoffee.com/AlexTrostle" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px     rgba(190,190, 190, 0.5) !important;" ></a><br/>
-Project Link: [https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
