@@ -119,13 +119,48 @@ The only flow that is required to start controlling an ESP32 is the ESP32 MQTT f
 ### ESP32
 To clone this repository use ```git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32``` <br/>
 What ESP32 version or variant should not matter much. Be sure you have a pinout of the device as you will need to choose your own pin to use.<br/>
-Some that I use are:<br/>
-* ESP-WROOM-32
-* ESP-32S
-* ESP32-CAM
-* ESP-EYE
+Some that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE
+
+### ESP-IDF
+1. Setup Toolchain
+	- [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html)
+	- [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html)
+	- [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html)
+2.  Get ESP-IDF
+	Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries.
+  `cd ~/esp`
+	`git clone --recursive https://github.com/espressif/esp-idf.git`
+3. Setup Path to ESP-IDF
+	The toolchain programs access ESP-IDF using IDF_PATH environment variable.
+	This variable should be set up on your PC, otherwise projects will not build.
+	- [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-windows)
+	- [Linux & Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-linux-macos)
+4. Install Required Python Packages
+   `python -m pip install --user -r $IDF_PATH/requirements.txt`
+5. Export the path
+		export IDF_PATH=~/esp/esp-idf
+		export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin
+<sup>&Dagger;:Check the [official site](https://esp-idf.readthedocs.io/en/latest/get-started/index.html) for more info.</sup>
+6. Clone my repo
+	 `git clone https://github.com/ETS-PoliTO/esp32-sniffer.git`
+
+### Configuration
+use ```make menuconfig```
+Go to `Serial flasher config`, then `Default serial port` and set the port in which ESP32 is connected
+This can be found by following [this guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html). 
+One problem I had was that it is not clearly documented that if using windows the port should be configured in the COMX for example COM0
+Set the `Baud rate` to `115200` for the ESP32
+Click `Save` -> `Yes` -> `Exit` to get back to the main configuration screen
+Go to `Example Configuration` and set your wifi and mqtt config.
+Once done configuring the project exit out of the menu by clicking `Save` -> `Exit` and `Yes` as many times as required.
+
+#### Flash and Monitor
+Use `make flash` to flash the project onto your device.
+Once the project has built use `make monitor` to see logs from the device in real time
+To exit the monitor us `Ctrl + ]` or `Ctrl` and  `]` at the same time
+
 #### ESP-WROOM-32 or ESP32S
-The code for your ESP32 and how to configure it to control a relay through MQTT can be found [here](https://github.com/Alextros00/ESP32-MQTT-Relay-Control-Project).
+Most of my devices are these. You can get really cheap knock offs on [AliExpress](https://www.aliexpress.com/)
 #### ESP32-CAM
 I am currently waiting for my device to arrive.
 #### ESP-EYE
