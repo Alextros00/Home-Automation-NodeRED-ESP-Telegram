@@ -98,7 +98,8 @@ It would help to have the hardware below.
 
 <!-- Mosquitto -->
 ### Mosquitto MQTT Broker
-> <sup>MQTT is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. It is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium [[mqtt.org](http://mqtt.org)]. The Mosquitto broker will be installed on your Raspberry Pi for the MQTT protocol to work.</sup> <br/>
+> MQTT is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. It is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium [[mqtt.org](http://mqtt.org)]. The Mosquitto broker will be installed on your Raspberry Pi for the MQTT protocol to work.<br/>
+
 Navigate to the terminal and follow these steps for the installation.
 1. Update your Raspberry Pi<br/>
 ```sudo apt-get update```
