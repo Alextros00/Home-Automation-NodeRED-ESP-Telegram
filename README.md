@@ -80,15 +80,13 @@ There were many parts to this project. Some sub-projects that I did in order to 
 
 <!-- GETTING STARTED -->
 ## Getting Started
-These steps will take you through getting your own project up and running.
+These steps will take you through getting your own project up and running. You will have to have the creative freedom to take it to the next level!
 
 <!-- Prerequisites -->
 ### Prerequisites
-The software used is free and mostly open source.
-* [ESP-IDF]() installed. <sup>&dagger;</sup> <br/>
-<sup>&dagger;: You do not need to know how to use it.</sup>
-
-The hardware below you will need to have or to purchase.
+The software used is free and mostly open source. All will be explained here!<br/>
+It would help to have the hardware below.
+* Laptop
 * Smartphone
 * At least one [ESP32]()
 * [Raspberry Pi 4]() <sup>&dagger;</sup> <sup>&Dagger;</sup> <br/>
@@ -97,7 +95,8 @@ The hardware below you will need to have or to purchase.
 
 <!-- Mosquitto -->
 ### Mosquitto
-The Mosquitto broker will need to be installed on your Raspberry Pi for the MQTT protocol to work.
+The Mosquitto broker will need to be installed on your Raspberry Pi for the MQTT protocol to work.<br/>
+Navigate to the terminal and follow these steps
 1. Update your Raspberry Pi<br/>
 ```sudo apt-get update```
 2. Install Mosquitto<br/>
@@ -114,9 +113,8 @@ The only flow that is required to start controlling an ESP32 is the ESP32 MQTT f
 
 <!-- ESP32 -->
 ### ESP32
-To clone this repository use ```git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32``` <br/>
-What ESP32 version or variant should not matter much. Be sure you have a pinout of the device as you will need to choose your own pin to use.<br/>
-Some that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE
+No matter what ESP device you have, you are going to want to start by installing the ESP-IDF.<br/>
+Some ESP devices that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE
 
 ### ESP-IDF
 1. Setup Toolchain
@@ -138,13 +136,13 @@ Some that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE
 		export IDF_PATH=~/esp/esp-idf
 		export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin
 <sup>&Dagger;:Check the [official site](https://esp-idf.readthedocs.io/en/latest/get-started/index.html) for more info.</sup>
-6. Clone my repo
-	 `git clone https://github.com/ETS-PoliTO/esp32-sniffer.git`
+6. Clone my ESP32 MQTT Light Control repository
+	 `git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32`
 
 ### Configuration
 use ```make menuconfig```
 Go to `Serial flasher config`, then `Default serial port` and set the port in which ESP32 is connected
-This can be found by following [this guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html). 
+Your serial port can be found using [this guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html). 
 One problem I had was that it is not clearly documented that if using windows the port should be configured in the COMX for example COM0
 Set the `Baud rate` to `115200` for the ESP32
 Click `Save` -> `Yes` -> `Exit` to get back to the main configuration screen
