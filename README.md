@@ -8,6 +8,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![GitHub last commit](https://img.shields.io/github/last-commit/Alextros00/Home-Automation-NodeRED-ESP-Telegram?style=for-the-badge)](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram)
 ![GitHub search hit counter](https://img.shields.io/github/search/Alextros00/Home-Automation-NodeRED-ESP-Telegram/hit?style=for-the-badge)
+![GitHub search hit counter](https://img.shields.io/github/search/Alextros00/Home-Automation-NodeRED-ESP-Telegram/goto?style=for-the-badge)
 
 <!-- PROJECT LOGO -->
 <br />
