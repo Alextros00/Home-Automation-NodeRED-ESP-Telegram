@@ -80,7 +80,8 @@ There were many parts to this project. Some sub-projects that I did in order to 
 
 <!-- GETTING STARTED -->
 ## Getting Started
-These steps will take you through getting your own project up and running. You will have to have the creative freedom to take it to the next level!
+These steps will take you through getting your own project up and running. This will take you through getting getting Mosquitto, NodeRED, and ESP32 to control a light.
+<img src="https://i1.wp.com/randomnerdtutorials.com/wp-content/uploads/2017/01/2output-mqtt.jpg?resize=828%2C132&quality=100&strip=all&ssl=1" width="50%" height="50%">
 
 <!-- Prerequisites -->
 ### Prerequisites
@@ -105,13 +106,13 @@ Navigate to the terminal and follow these steps
 ```sudo apt-get install mosquitto-clients```
 <br/><sup>&Dagger;: Note for later: Port of your Mosquitto Broker, most likely 1883; Server Mosquitto Broker is running on, most likely the ip address of your Raspberry Pi</sup><br/>
 I reccommend reading about MQTT Protocol it is very simple and easy to use. [Check out Steves Internet Guide on MQTT.](http://www.steves-internet-guide.com/mqtt-works/)
-<img src="http://www.steves-internet-guide.com/wp-content/uploads/mqtt-message-flow.jpg" width="50%" height="50%">
+<img src="http://www.steves-internet-guide.com/wp-content/uploads/mqtt-message-flow.jpg" width="30%" height="30%">
 
 <!-- NodeRED -->
 ### NodeRED
 You will need [NodeRED](http://nodered.org) to be installed on your Raspberry Pi. To do so follow [these steps](https://nodered.org/docs/getting-started/local).<br/>
 The only flow that is required to start controlling an ESP32 is the ESP32 MQTT flow. The rest of my flows can be found in the [wiki pages](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/wiki)<br/>
-<img src="images/NodeRED3.png" width="50%" height="50%">
+<img src="images/NodeRED3.png" width="30%" height="30%">
 
 <!-- ESP32 -->
 ### ESP32
