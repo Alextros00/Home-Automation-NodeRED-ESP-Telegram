@@ -95,7 +95,7 @@ It would help to have the hardware below.
 
 <!-- Mosquitto -->
 ### Mosquitto
-The Mosquitto broker will need to be installed on your Raspberry Pi for the MQTT protocol to work.<br/>
+The Mosquitto broker will be installed on your Raspberry Pi for the MQTT protocol to work.<br/>
 Navigate to the terminal and follow these steps
 1. Update your Raspberry Pi<br/>
 ```sudo apt-get update```
@@ -104,6 +104,8 @@ Navigate to the terminal and follow these steps
 3. Install Mosquitto Client<br/>
 ```sudo apt-get install mosquitto-clients```
 <br/><sup>&Dagger;: Note for later: Port of your Mosquitto Broker, most likely 1883; Server Mosquitto Broker is running on, most likely the ip address of your Raspberry Pi</sup><br/>
+I reccommend reading about MQTT Protocol it is very simple and easy to use. [Check out Steves Internet Guide on MQTT.](http://www.steves-internet-guide.com/mqtt-works/)
+<img src="http://www.steves-internet-guide.com/wp-content/uploads/mqtt-message-flow.jpg" width="50%" height="50%">
 
 <!-- NodeRED -->
 ### NodeRED
@@ -113,53 +115,59 @@ The only flow that is required to start controlling an ESP32 is the ESP32 MQTT f
 
 <!-- ESP32 -->
 ### ESP32
-No matter what ESP device you have, you are going to want to start by installing the ESP-IDF.<br/>
+You can get really cheap knock off ESP32s on [AliExpress](https://www.aliexpress.com/)
 Some ESP devices that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE
+#### Hardware Wiring
+Depending on the project specific goal of your ESP32 device depends on how you want to wire it. Here You will be shown how to wire to use your ESP32 to remotly control a light using a relay.
 
-### ESP-IDF
+#### ESP-IDF
 1. Setup Toolchain
 	- [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html)
 	- [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html)
 	- [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html)
 2.  Get ESP-IDF
 	Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries.
-  	`cd ~/esp`
-	`git clone --recursive https://github.com/espressif/esp-idf.git`
+  	```cd ~/esp```
+	```git clone --recursive https://github.com/espressif/esp-idf.git```
 3. Setup Path to ESP-IDF
 	The toolchain programs access ESP-IDF using IDF_PATH environment variable.
 	This variable should be set up on your PC, otherwise projects will not build.
 	- [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-windows)
 	- [Linux & Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-linux-macos)
 4. Install Required Python Packages
-   `python -m pip install --user -r $IDF_PATH/requirements.txt`
+   ```python -m pip install --user -r $IDF_PATH/requirements.txt```
 5. Export the path
 		export IDF_PATH=~/esp/esp-idf
 		export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin
 <sup>&Dagger;:Check the [official site](https://esp-idf.readthedocs.io/en/latest/get-started/index.html) for more info.</sup>
 6. Clone my ESP32 MQTT Light Control repository
-	 `git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32`
+   ```git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32```
 
-### Configuration
-use ```make menuconfig```
-Go to `Serial flasher config`, then `Default serial port` and set the port in which ESP32 is connected
+#### Configuration
+Plug in your ESP32 to your laptop.
+```cd``` into the project directory. If you are having a hard time finding it use ```ls``` to list the files and directories within a folder
+Use ```make menuconfig``` in the commmand line. It may take a minute to load.
+Go to `Serial flasher config`, then `Default serial port` and set the port in which your ESP32 is connected
 Your serial port can be found using [this guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html). 
 One problem I had was that it is not clearly documented that if using windows the port should be configured in the COMX for example COM0
-Set the `Baud rate` to `115200` for the ESP32
-Click `Save` -> `Yes` -> `Exit` to get back to the main configuration screen
-Go to `Example Configuration` and set your wifi and mqtt config.
-Once done configuring the project exit out of the menu by clicking `Save` -> `Exit` and `Yes` as many times as required.
+Set the `Default baud rate` to `115200 baud` for the ESP32
+Click `Save` -> `Ok` -> `Exit` -> `Exit` to get back to the main configuration screen
+Go to `Example Configuration`
+	- Set `WiFI SSID` and `WiFi password` to that of your local 2.4GHz network
+	- Set `Broker URL` to your mqtt server:port. It will look something like `mqtt://@192.168.1.142:1883)` if you have no username and password configured for Mosquitto
+	- Enter the `ESP32-X Number` that you are using. This can be left blank and has no impact on the functionality of the code besides messages sent.
+	- Enter the `Relay GPIO Number` or the GPIO that will control the relay. What pin you can use can be found on your device specific pinout.
+	- Select `enter 1 or 2` to decide between subscribing to 1 or 2 relay. Default is 1.
+	- Set the `MQTT Topic to Subscribe To` or recieve messages from
+	- Set the `2nd MQTT Topic to Subscribe To`. Can be left alone if not using.
+	- Set the `MQTT Topic to Publish To` or send messages to
+Once done configuring the project exit out of the menu by clicking `Save` -> `Ok` -> `Exit` -> `Exit` -> `Exit` to go back to the terminal
 
 #### Flash and Monitor
-Use `make flash` to flash the project onto your device.
-Once the project has built use `make monitor` to see logs from the device in real time
+Use `make flash` to build and flash the project onto your device.
+Once the project has been flashed onto your device use `make monitor` to see logs from the device in real time
 To exit the monitor us `Ctrl + ]` or `Ctrl` and  `]` at the same time
 
-#### ESP-WROOM-32 or ESP32S
-Most of my devices are these. You can get really cheap knock offs on [AliExpress](https://www.aliexpress.com/)
-#### ESP32-CAM
-I am currently waiting for my device to arrive.
-#### ESP-EYE
-Very cool device, have played with the code that is preloaded but struggling to work with. Much more advanced device and much less documentation online right now.
 
 <!-- Telegram -->
 ### Telegram
