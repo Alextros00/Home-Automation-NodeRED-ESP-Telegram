@@ -6,7 +6,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![GitHub last commit](https://img.shields.io/github/last-commit/Alextros00/Home-Automation-NodeRED-ESP-Telegram?style=flat-square)](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Alextros00/Home-Automation-NodeRED-ESP-Telegram?style=for-the-badge)](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram)
 
 
 <!-- PROJECT LOGO -->
