@@ -123,9 +123,9 @@ Depending on the project specific goal of your ESP32 device depends on how you w
 
 #### ESP-IDF
 1. Setup Toolchain
-	- [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html)
-	- [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html)
-	- [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html)
+	* [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html)
+	* [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html)
+	* [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html)
 2.  Get ESP-IDF
 	Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries.<br/>
   	```cd ~/esp```<br/>
@@ -133,8 +133,8 @@ Depending on the project specific goal of your ESP32 device depends on how you w
 3. Setup Path to ESP-IDF
 	The toolchain programs access ESP-IDF using IDF_PATH environment variable.<br/>
 	This variable should be set up on your PC, otherwise projects will not build.<br/>
-	- [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-windows)
-	- [Linux & Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-linux-macos)
+	* [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-windows)
+	* [Linux & Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-linux-macos)
 4. Install Required Python Packages<br/>
    ```python -m pip install --user -r $IDF_PATH/requirements.txt```
 5. Export the path<br/>
@@ -145,17 +145,19 @@ Depending on the project specific goal of your ESP32 device depends on how you w
    ```git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32```
 
 #### Configuration
-1. Plug in your ESP32 to your laptop.
+1. Plug in your ESP32 to your laptop and open your command line.
 2. ```cd``` into the project directory.<br/>
-3. Use ```make menuconfig``` in the commmand line. It may take a minute to load.<br/>
-4. Go to `Serial flasher config`, then `Default serial port` and set the port in which your ESP32 is connected<br/>
+3. Open the configuration menu. It may take a minute to load.<br/>
+   ```make menuconfig```
+4. Go to ```Serial flasher config```
+   	* Set ```Default serial port``` and set the port in which your ESP32 is connected<sup>&dagger;</sup><sup>&Dagger;</sup>
+	* Set the `Default baud rate` to `115200 baud` for the ESP32
    <sup>&dagger;:Your serial port can be found using [this guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html).</sup><br/>
 <sup>&Dagger;:One problem I had was that it is not clearly documented that if using windows the port should be configured in the COMX for example COM0</sup><br/>
-5. Set the `Default baud rate` to `115200 baud` for the ESP32<br/>
 6. Click `Save` -> `Ok` -> `Exit` -> `Exit` to get back to the main configuration screen<br/>
 7. Go to `Example Configuration`
 	- Set `WiFI SSID` and `WiFi password` to that of your local 2.4GHz network
-	- Set `Broker URL` to your mqtt server:port. It will look something like `mqtt://@192.168.1.142:1883)` if you have no username and password configured for Mosquitto
+	- Set `Broker URL` to your mqtt server:port. It will look something like `mqtt://@192.168.1.142:1883` if you have no username and password configured for Mosquitto
 	- Enter the `ESP32-X Number` that you are using. This can be left blank and has no impact on the functionality of the code besides messages sent.
 	- Enter the `Relay GPIO Number` or the GPIO that will control the relay. What pin you can use can be found on your device specific pinout.
 	- Select `enter 1 or 2` to decide between subscribing to 1 or 2 relay. Default is 1.
