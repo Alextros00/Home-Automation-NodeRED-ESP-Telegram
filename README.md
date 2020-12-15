@@ -1,10 +1,10 @@
 # Home-Automation-NodeRED-ESP-Telegram
 <!-- PROJECT SHIELDS -->
 <!--[![Contributors][contributors-shield]][contributors-url]-->
-[![Forks][forks-shield]][forks-url]
+<!--[![Forks][forks-shield]][forks-url]-->
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![Features][issues-shield]][issues-url]
+<!--[![MIT License][license-shield]][license-url]-->
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![GitHub last commit](https://img.shields.io/github/last-commit/Alextros00/Home-Automation-NodeRED-ESP-Telegram?style=for-the-badge)](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram)
 ![GitHub search hit counter](https://img.shields.io/github/search/Alextros00/Home-Automation-NodeRED-ESP-Telegram/hit?style=for-the-badge)
