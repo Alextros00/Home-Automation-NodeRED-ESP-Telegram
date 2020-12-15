@@ -48,7 +48,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#mosquitto">Mosquitto</a></li>
+        <li><a href="#mosquitto mqtt broker">Mosquitto MQTT</a></li>
         <li><a href="#nodered">NodeRED</a></li>
         <li><a href="#esp32">ESP32</a></li>
         <li><a href="#telegram">Telegram</a></li>
@@ -97,9 +97,9 @@ It would help to have the hardware below.
 <sup>&Dagger;: Needs to be connected to and using a 2.4GHz network. This is because the ESP32 currently(Dec 2020) cannot connect to 5GHz networks.</sup><br/>
 
 <!-- Mosquitto -->
-### Mosquitto
-The Mosquitto broker will be installed on your Raspberry Pi for the MQTT protocol to work.<br/>
-Navigate to the terminal and follow these steps
+### Mosquitto MQTT Broker
+> MQTT is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. It is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium [[mqtt.org](http://mqtt.org)]. The Mosquitto broker will be installed on your Raspberry Pi for the MQTT protocol to work.<br/>
+Navigate to the terminal and follow these steps for the installation.
 1. Update your Raspberry Pi<br/>
 ```sudo apt-get update```
 2. Install Mosquitto<br/>
