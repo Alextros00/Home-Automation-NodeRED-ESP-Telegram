@@ -145,15 +145,15 @@ Depending on the project specific goal of your ESP32 device depends on how you w
    ```git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32```
 
 #### Configuration
-Plug in your ESP32 to your laptop.
-```cd``` into the project directory. If you are having a hard time finding it use ```ls``` to list the files and directories within a folder<br/>
-Use ```make menuconfig``` in the commmand line. It may take a minute to load.<br/>
-Go to `Serial flasher config`, then `Default serial port` and set the port in which your ESP32 is connected<br/>
-Your serial port can be found using [this guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html). <br/>
-One problem I had was that it is not clearly documented that if using windows the port should be configured in the COMX for example COM0<br/>
-Set the `Default baud rate` to `115200 baud` for the ESP32<br/>
-Click `Save` -> `Ok` -> `Exit` -> `Exit` to get back to the main configuration screen<br/>
-Go to `Example Configuration`
+1. Plug in your ESP32 to your laptop.
+2. ```cd``` into the project directory.<br/>
+3. Use ```make menuconfig``` in the commmand line. It may take a minute to load.<br/>
+4. Go to `Serial flasher config`, then `Default serial port` and set the port in which your ESP32 is connected<br/>
+   <sup>&dagger;:Your serial port can be found using [this guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html).</sup><br/>
+<sup>&Dagger;:One problem I had was that it is not clearly documented that if using windows the port should be configured in the COMX for example COM0</sup><br/>
+5. Set the `Default baud rate` to `115200 baud` for the ESP32<br/>
+6. Click `Save` -> `Ok` -> `Exit` -> `Exit` to get back to the main configuration screen<br/>
+7. Go to `Example Configuration`
 	- Set `WiFI SSID` and `WiFi password` to that of your local 2.4GHz network
 	- Set `Broker URL` to your mqtt server:port. It will look something like `mqtt://@192.168.1.142:1883)` if you have no username and password configured for Mosquitto
 	- Enter the `ESP32-X Number` that you are using. This can be left blank and has no impact on the functionality of the code besides messages sent.
@@ -162,7 +162,7 @@ Go to `Example Configuration`
 	- Set the `MQTT Topic to Subscribe To` or recieve messages from
 	- Set the `2nd MQTT Topic to Subscribe To`. Can be left alone if not using.
 	- Set the `MQTT Topic to Publish To` or send messages to
-Once done configuring the project exit out of the menu by clicking `Save` -> `Ok` -> `Exit` -> `Exit` -> `Exit` to go back to the terminal
+8. Once done configuring the project exit out of the menu by clicking `Save` -> `Ok` -> `Exit` -> `Exit` -> `Exit` to go back to the terminal
 
 #### Flash and Monitor
 Use `make flash` to build and flash the project onto your device.<br/>
