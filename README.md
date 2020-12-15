@@ -98,7 +98,7 @@ It would help to have the hardware below.
 
 <!-- Mosquitto -->
 ### Mosquitto MQTT Broker
-> MQTT is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. It is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium [[mqtt.org](http://mqtt.org)]. The Mosquitto broker will be installed on your Raspberry Pi for the MQTT protocol to work.<br/>
+> MQTT is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. It is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium [[mqtt.org](http://mqtt.org)]. The Mosquitto broker will be installed on your Raspberry Pi as the broker and your ESP devices will be clients. [Learn more here.](http://www.steves-internet-guide.com/mqtt-works/)
 
 Navigate to the terminal and follow these steps for the installation.
 1. Update your Raspberry Pi<br/>
@@ -108,13 +108,15 @@ Navigate to the terminal and follow these steps for the installation.
 3. Install Mosquitto Client<br/>
 ```sudo apt-get install mosquitto-clients```
 <br/><sup>&Dagger;: Note for later: Port of your Mosquitto Broker, most likely 1883; Server Mosquitto Broker is running on, most likely the ip address of your Raspberry Pi</sup><br/>
-I reccommend reading about MQTT Protocol it is very simple and easy to use. [Check out Steves Internet Guide on MQTT.](http://www.steves-internet-guide.com/mqtt-works/)
 <img src="http://www.steves-internet-guide.com/wp-content/uploads/mqtt-message-flow.jpg" width="30%" height="30%">
 
 <!-- NodeRED -->
 ### NodeRED
-You will need [NodeRED](http://nodered.org) to be installed on your Raspberry Pi. To do so follow [these steps](https://nodered.org/docs/getting-started/local).<br/>
-The only flow that is required to start controlling an ESP32 is the ESP32 MQTT flow. The rest of my flows can be found in the [wiki pages](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/wiki)<br/>
+>[NodeRED](http://nodered.org) is a low-code programming tool for wiring together hardware devices, APIs and online services for event driven applications. The browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.
+
+[Install NodeRED on your Raspberry Pi](https://nodered.org/docs/getting-started/local)
+My flows can be found in the [wiki pages](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/wiki)<br/>
+Get the MQTT Flow to continue on with this tutorial.<br/>
 <img src="images/NodeRED3.png" width="30%" height="30%">
 
 <!-- ESP32 -->
