@@ -104,10 +104,7 @@ The Mosquitto broker will need to be installed on your Raspberry Pi for the MQTT
 ```sudo apt-get install mosquitto```
 3. Install Mosquitto Client<br/>
 ```sudo apt-get install mosquitto-clients```
-
-Be sure to note for later:
-* The port of your mosquitto broker. Will automatically be Port 1883
-* The server your mosquitto broker is running on. If it is running on your Raspberry Pi then it will be the ip address of your Raspberry Pi.
+<br/><sup>&Dagger;: Note for later: Port of your Mosquitto Broker, most likely 1883; Server Mosquitto Broker is running on, most likely the ip address of your Raspberry Pi</sup><br/>
 
 <!-- NodeRED -->
 ### NodeRED
@@ -128,7 +125,7 @@ Some that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE
 	- [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html)
 2.  Get ESP-IDF
 	Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries.
-  `cd ~/esp`
+  	`cd ~/esp`
 	`git clone --recursive https://github.com/espressif/esp-idf.git`
 3. Setup Path to ESP-IDF
 	The toolchain programs access ESP-IDF using IDF_PATH environment variable.
@@ -170,15 +167,16 @@ Very cool device, have played with the code that is preloaded but struggling to 
 ### Telegram
 Telegram adds the ability to control the system from your phone but is not required for use. You could stricktly use the NodeRED dashboard to control your system. In this implementation, Telegram does not directly control any devices but rather goes through NodeRED using the [node-red-contrib-telegrambot](https://flows.nodered.org/node/node-red-contrib-telegrambot) library.<br/>
 #### Commands <br/>
-* `/water` - records that I drank a bottle of water
-* `/poop` - records that I took a poop
-* `/piss` - records that I took a pee
-* `/whoishome` - replys with who is on my home wifi
-* `/alive` - replys with what devices are responding on the system
-* `doorlighton` - turns on the light by the door 
-* `doorlightoff` - turns off the light by the door
-* `bedsidelampon` - turns on the light by my bed
-* `bedsidelampoff` - turns off the light by my bed
+* `/water` 	    - records that I drank a bottle of water
+* `/poop` 	    - records that I took a poop
+* `/piss` 	    - records that I took a pee
+* `/whoishome` 	    - replys with who is on my home wifi
+* `/alive` 	    - replys with what devices are responding on the system
+* `/doorlighton`    - turns on the light by the door 
+* `/doorlightoff`   - turns off the light by the door
+* `/bedsidelampon`  - turns on the light by my bed
+* `/bedsidelampoff` - turns off the light by my bed
+* `/sleepin`	    - delays the auto turn on of my lights by 30 minutes, twice will do an hour, 3 times no effect
 #### Notifications <br/>
 * `Raspberry Pi is over 65 degree C` - Tells me when the Raspberry Pi has reached temperatures over 65C. 
 
@@ -215,7 +213,7 @@ Project Link: [https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegra
 * []()
 * []()
 ##### Other
-* []()
+* [Had a nice README page to refference](https://github.com/ETS-PoliTO/esp32-sniffer/edit/master/README.md)
 * []()
 
 Links used in the creation of this page:
