@@ -127,10 +127,7 @@ Some ESP devices that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE<br/>
 Depending on the project specific goal of your ESP32 device depends on how you want to wire it. Here You will be shown how to wire to use your ESP32 to remotly control a light using a relay.
 
 #### ESP-IDF
-1. Setup Toolchain
-	* [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html)
-	* [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html)
-	* [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html)
+1. Setup Toolchain for [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html), [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html) or [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html)<br/>
 2.  Get ESP-IDF
 	Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries.<br/>
   	```cd ~/esp```<br/>
