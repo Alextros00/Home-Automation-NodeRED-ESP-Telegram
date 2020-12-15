@@ -143,14 +143,14 @@ Depending on the project specific goal of your ESP32 device depends on how you w
    ```export IDF_PATH=~/esp/esp-idf```<br/>
    ```export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin```<br/>
 <sup>&Dagger;:Check the [official site](https://esp-idf.readthedocs.io/en/latest/get-started/index.html) for more info.</sup>
-6. Clone my ESP32 MQTT Light Control repository<br/>
+6. Fork my repo and Clone my ESP32 MQTT Light Control repository using the command down below with your user name in place of mine.<br/>
    ```git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32```
 
 #### Configuration
 1. Plug in your ESP32 to your laptop and open your command line.
 2. ```cd``` into the project directory.<br/>
 3. Open the configuration menu. It may take a minute to load.<br/>
-   ```make menuconfig```
+   ```idf.py menuconfig```
 4. Go to ```Serial flasher config```
    	* Set the `Default baud rate` to `115200 baud` for the ESP32
 	* Set ```Default serial port``` and set the port in which your ESP32 is connected<sup>&dagger;</sup><sup>&Dagger;</sup>
@@ -170,9 +170,9 @@ Depending on the project specific goal of your ESP32 device depends on how you w
 
 #### Flash and Monitor
 Build and flash the project onto your device.<br/>
-```make flash```<br/>
+```idf.py build & flash```<br/>
 Monitor the logs of your device<br/>
-```make monitor```<br/>
+```idf.py monitor```<br/>
 To exit the monitor us `Ctrl + ]` or `Ctrl` and  `]` at the same time
 
 
