@@ -116,8 +116,8 @@ The only flow that is required to start controlling an ESP32 is the ESP32 MQTT f
 
 <!-- ESP32 -->
 ### ESP32
-You can get really cheap knock off ESP32s on [AliExpress](https://www.aliexpress.com/)
-Some ESP devices that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE
+You can get really cheap knock off ESP32s on [AliExpress](https://www.aliexpress.com/)<br/>
+Some ESP devices that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE<br/>
 #### Hardware Wiring
 Depending on the project specific goal of your ESP32 device depends on how you want to wire it. Here You will be shown how to wire to use your ESP32 to remotly control a light using a relay.
 
@@ -127,32 +127,32 @@ Depending on the project specific goal of your ESP32 device depends on how you w
 	- [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html)
 	- [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html)
 2.  Get ESP-IDF
-	Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries.
-  	```cd ~/esp```
-	```git clone --recursive https://github.com/espressif/esp-idf.git```
+	Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries.<br/>
+  	```cd ~/esp```<br/>
+	```git clone --recursive https://github.com/espressif/esp-idf.git```<br/>
 3. Setup Path to ESP-IDF
-	The toolchain programs access ESP-IDF using IDF_PATH environment variable.
-	This variable should be set up on your PC, otherwise projects will not build.
+	The toolchain programs access ESP-IDF using IDF_PATH environment variable.<br/>
+	This variable should be set up on your PC, otherwise projects will not build.<br/>
 	- [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-windows)
 	- [Linux & Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-linux-macos)
-4. Install Required Python Packages
+4. Install Required Python Packages<br/>
    ```python -m pip install --user -r $IDF_PATH/requirements.txt```
-5. Export the path
-		export IDF_PATH=~/esp/esp-idf
-		export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin
+5. Export the path<br/>
+   ```export IDF_PATH=~/esp/esp-idf```<br/>
+   ```export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin```<br/>
 <sup>&Dagger;:Check the [official site](https://esp-idf.readthedocs.io/en/latest/get-started/index.html) for more info.</sup>
-6. Clone my ESP32 MQTT Light Control repository
+6. Clone my ESP32 MQTT Light Control repository<br/>
    ```git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32```
 
 #### Configuration
 Plug in your ESP32 to your laptop.
-```cd``` into the project directory. If you are having a hard time finding it use ```ls``` to list the files and directories within a folder
-Use ```make menuconfig``` in the commmand line. It may take a minute to load.
-Go to `Serial flasher config`, then `Default serial port` and set the port in which your ESP32 is connected
-Your serial port can be found using [this guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html). 
-One problem I had was that it is not clearly documented that if using windows the port should be configured in the COMX for example COM0
-Set the `Default baud rate` to `115200 baud` for the ESP32
-Click `Save` -> `Ok` -> `Exit` -> `Exit` to get back to the main configuration screen
+```cd``` into the project directory. If you are having a hard time finding it use ```ls``` to list the files and directories within a folder<br/>
+Use ```make menuconfig``` in the commmand line. It may take a minute to load.<br/>
+Go to `Serial flasher config`, then `Default serial port` and set the port in which your ESP32 is connected<br/>
+Your serial port can be found using [this guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html). <br/>
+One problem I had was that it is not clearly documented that if using windows the port should be configured in the COMX for example COM0<br/>
+Set the `Default baud rate` to `115200 baud` for the ESP32<br/>
+Click `Save` -> `Ok` -> `Exit` -> `Exit` to get back to the main configuration screen<br/>
 Go to `Example Configuration`
 	- Set `WiFI SSID` and `WiFi password` to that of your local 2.4GHz network
 	- Set `Broker URL` to your mqtt server:port. It will look something like `mqtt://@192.168.1.142:1883)` if you have no username and password configured for Mosquitto
@@ -165,8 +165,8 @@ Go to `Example Configuration`
 Once done configuring the project exit out of the menu by clicking `Save` -> `Ok` -> `Exit` -> `Exit` -> `Exit` to go back to the terminal
 
 #### Flash and Monitor
-Use `make flash` to build and flash the project onto your device.
-Once the project has been flashed onto your device use `make monitor` to see logs from the device in real time
+Use `make flash` to build and flash the project onto your device.<br/>
+Once the project has been flashed onto your device use `make monitor` to see logs from the device in real time<br/>
 To exit the monitor us `Ctrl + ]` or `Ctrl` and  `]` at the same time
 
 
