@@ -217,14 +217,7 @@ Distributed under the MIT License. See `LICENSE` for more information but basica
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-##### ESP
-* []()
-* []()
-##### NodeRED
-* []()
-* []()
-##### Other
-* [Had a nice README page to refference](https://github.com/ETS-PoliTO/esp32-sniffer/edit/master/README.md)
+* [Nice README page to refference and get me started](https://github.com/ETS-PoliTO/esp32-sniffer/edit/master/README.md)
 * []()
 
 Links used in the creation of this page:
