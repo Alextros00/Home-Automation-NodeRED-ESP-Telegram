@@ -187,10 +187,7 @@ Telegram adds the ability to control the system from your phone but is not requi
 * `/piss` 	    - records that I took a pee
 * `/whoishome` 	    - replys with who is on my home wifi
 * `/alive` 	    - replys with what devices are responding on the system
-* `/doorlighton`    - turns on the light by the door 
-* `/doorlightoff`   - turns off the light by the door
-* `/bedsidelampon`  - turns on the light by my bed
-* `/bedsidelampoff` - turns off the light by my bed
+* `/lights`	    - displays inline keyboard to choose which light to change and what to do with it
 * `/sleepin`	    - delays the auto turn on of my lights by 30 minutes, twice will do an hour, 3 times no effect
 #### Notifications <br/>
 * `Raspberry Pi is over 65 degree C` - Tells me when the Raspberry Pi has reached temperatures over 65C. 
