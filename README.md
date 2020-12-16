@@ -219,6 +219,8 @@ Distributed under the MIT License. See `LICENSE` for more information but basica
 * [Nice README page to refference and get me started](https://github.com/ETS-PoliTO/esp32-sniffer/edit/master/README.md)
 * []()
 
+<script src="https://gist.github.com/Alextros00/57903819eef31f4beaa4cd24c9d57865.js"></script>
+
 Links used in the creation of this page:
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
