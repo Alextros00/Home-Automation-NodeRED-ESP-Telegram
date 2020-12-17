@@ -115,10 +115,17 @@ Navigate to the terminal and follow these steps for the installation.
 >[NodeRED](http://nodered.org) is a low-code programming tool for wiring together hardware devices, APIs and online services for event driven applications. The browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.
 
 [Install NodeRED on your Raspberry Pi](https://nodered.org/docs/getting-started/local)
-You can get my flows from below or from [my collection](https://flows.nodered.org/collection/RV7rLt9tjepZ)
+#### Dependancies
+* [node-red-contrib-telegrambot](https://flows.nodered.org/node/node-red-contrib-telegrambot) - for using NodeRED with Telegram
+*
+#### Sourced Flows
+* [Live Location](https://github.com/windkh/node-red-contrib-telegrambot/blob/master/examples/livelocation.json)
+*
+*
+#### Custom Flows
+My custom flows can be found in [my collection on Node-RED.](https://flows.nodered.org/collection/RV7rLt9tjepZ)<br/>
 * [Telegram Inline Keyboard](https://flows.nodered.org/flow/c8194f9d056455018d2da8ef7e109733)
-My flows can be found in the [wiki pages](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/wiki)<br/>
-Get the MQTT Flow to continue on with this tutorial.<br/>
+* [Daily Motivational Telegram Message](https://flows.nodered.org/flow/642ee1a708d9cebeee964c7006e23020)
 <img src="images/NodeRED3.png" width="30%" height="30%">
 
 <!-- ESP32 -->
