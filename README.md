@@ -82,7 +82,7 @@ There were many parts to this project. Some sub-projects that I did in order to 
 
 <!-- GETTING STARTED -->
 ## Getting Started
-These steps will take you through getting your own project up and running. This will take you through getting getting Mosquitto, NodeRED, and ESP32 to control a light.
+These steps will take you through getting your own project up and running. This will take you through getting getting Mosquitto, NodeRED, and ESP32 to control a light.<br/>
 <img src="https://i1.wp.com/randomnerdtutorials.com/wp-content/uploads/2017/01/2output-mqtt.jpg?resize=828%2C132&quality=100&strip=all&ssl=1" width="50%" height="50%">
 
 <!-- Prerequisites -->
