@@ -35,23 +35,24 @@
 </p>
 
 <!-- TABLE OF CONTENTS -->
+
 <details open="open">
-  <summary>Table of Contents</summary>
+  <summary>Table of Contents</summary><p align ="right">
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+	<li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#mosquitto-mqtt-broker">Mosquitto MQTT</a></li>
-        <li><a href="#nodered">NodeRED</a></li>
-        <li><a href="#esp32">ESP32</a></li>
-        <li><a href="#telegram">Telegram</a></li>
+	<li><a href="#prerequisites">Prerequisites</a></li>
+	<li><a href="#mosquitto-mqtt-broker">Mosquitto MQTT</a></li>
+	<li><a href="#nodered">NodeRED</a></li>
+	<li><a href="#esp32">ESP32</a></li>
+	<li><a href="#telegram">Telegram</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -60,7 +61,7 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
-</details>
+</p></details>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
