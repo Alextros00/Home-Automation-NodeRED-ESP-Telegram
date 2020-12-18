@@ -37,7 +37,7 @@
 <!-- TABLE OF CONTENTS -->
 
 <details open="open">
-  <summary>Table of Contents</summary><p align ="right">
+  <summary>Table of Contents</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -61,7 +61,7 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
-</p></details>
+</details>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
