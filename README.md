@@ -65,7 +65,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 This project is about automating all aspects of my home that I can. Why turn on my lights every morning at 7am and turn them off every night at 10:45pm when it can be done for me! I want to spend as little time as possible dealing with repetitive tasks and focusing on the things that matter most to me.
-
 This project consists of many smaller projects. Here is where they are all put together and additional features are added.
 
 ### Built With
@@ -79,6 +78,13 @@ There were many parts to this project. Some sub-projects that I did in order to 
 * [Telegram](https://telegram.org/)
 
 <sup>&dagger;: I us 8GB but don't really think it is required.</sup>
+
+### Architecture
+<p align="center">
+  <a href="https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram">
+    <img src="images/Architecture.png" alt="Architecture" width="80" height="80">
+  </a>
+</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
