@@ -82,7 +82,7 @@ There were many parts to this project. Some sub-projects that I did in order to 
 ### Architecture
 <p align="center">
   <a href="https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram">
-    <img src="images/Architecture.png" alt="Architecture" width="80" height="80">
+    <img src="images/Auto_Home_Architecture.png" alt="Architecture" width="80" height="80">
   </a>
 </p>
 
