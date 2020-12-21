@@ -193,6 +193,11 @@ Details of my custom flows can be found at the links below and in [my collection
   <img src="images/NodeRED3.png" width="30%" height="30%" />
   <img src="images/NodeRED_Flow_webhooks.png" width="30%" height="30%" />
   <img src="images/NodeRED_Flow_FreeStuff.png" width="30%" height="30%" />
+  <img src="images/NodeRED_Flow_DailyQuote.png" width="30%" height="30%" />
+  <img src="images/NodeRED_Flow_DeviceAlive.png" width="30%" height="30%" />
+  <img src="images/NodeRED_Flow_DoorLight.png" width="30%" height="30%" />
+  <img src="images/NodeRED_Flow_RandomPhoto.png" width="30%" height="30%" />
+  <img src="images/NodeRED_Flow_WhoIsOnWifi.png" width="30%" height="30%" />
 </p>
 
 <!-- Telegram -->
