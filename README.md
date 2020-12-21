@@ -189,9 +189,11 @@ Details of my custom flows can be found at the links below and in [my collection
 * [Telegram Inline Keyboard](https://flows.nodered.org/flow/c8194f9d056455018d2da8ef7e109733) - A fancy way to select between multiple options with only one command
 * [Daily Motivational Telegram Message](https://flows.nodered.org/flow/642ee1a708d9cebeee964c7006e23020) - Recieve a quote at 11am each day to keep me motivated
 * [Get Local Free Listings](url to flow that displays local listings)
-<img src="images/NodeRED3.png" width="30%" height="30%">
-<img src="images/NodeRED_Flow_webhooks.png" width="30%" height="30%">
-<img src="images/NodeRED_Flow_FreeStuff.png" width="30%" height="30%">
+<p float="middle">
+  <img src="images/NodeRED3.png" width="30%" height="30%">
+  <img src="images/NodeRED_Flow_webhooks.png" width="30%" height="30%">
+  <img src="images/NodeRED_Flow_FreeStuff.png" width="30%" height="30%">
+</p>
 
 <!-- Telegram -->
 ### Telegram
