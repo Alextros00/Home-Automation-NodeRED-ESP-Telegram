@@ -103,38 +103,6 @@ It would help to have the hardware below.
 <sup>&dagger;: Raspberry Pi 4 should be running [Raspbian Operating System](https://projects.raspberrypi.org/en/projects/noobs-install)</sup><br/>
 <sup>&Dagger;: Needs to be connected to and using a 2.4GHz network. This is because the ESP32 currently(Dec 2020) cannot connect to 5GHz networks.</sup><br/>
 
-<!-- Mosquitto -->
-### Mosquitto MQTT Broker
-> MQTT is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. It is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium [[mqtt.org](http://mqtt.org)]. The Mosquitto broker will be installed on your Raspberry Pi as the broker and your ESP devices will be clients. [Learn more here.](http://www.steves-internet-guide.com/mqtt-works/)
-
-Navigate to the terminal and follow these steps for the installation.
-1. Update your Raspberry Pi<br/>
-```sudo apt-get update```
-2. Install Mosquitto<br/>
-```sudo apt-get install mosquitto```
-3. Install Mosquitto Client<br/>
-```sudo apt-get install mosquitto-clients```
-<br/><sup>&Dagger;: Note for later: Port of your Mosquitto Broker, most likely 1883; Server Mosquitto Broker is running on, most likely the ip address of your Raspberry Pi</sup><br/>
-<img src="http://www.steves-internet-guide.com/wp-content/uploads/mqtt-message-flow.jpg" width="30%" height="30%">
-
-<!-- NodeRED -->
-### NodeRED
->[NodeRED](http://nodered.org) is a low-code programming tool for wiring together hardware devices, APIs and online services for event driven applications. The browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.
-
-[Install NodeRED on your Raspberry Pi](https://nodered.org/docs/getting-started/local)
-
-#### Sourced Flows
-Check out these flows that I found online and modified for my use.
-* [Telegram Live Location](https://github.com/windkh/node-red-contrib-telegrambot/blob/master/examples/livelocation.json)
-* [Raspberry Pi System Statistics](https://flows.nodered.org/flow/c87d62e3b0d9f1ebfbbdf6aa9300c690/in/RV7rLt9tjepZ)
-
-#### Custom Flows
-Details of my custom flows can be found at the links below and in [my collection on Node-RED.](https://flows.nodered.org/collection/RV7rLt9tjepZ)<br/>
-* [Telegram Inline Keyboard](https://flows.nodered.org/flow/c8194f9d056455018d2da8ef7e109733) - A fancy way to select between multiple options with only one command
-* [Daily Motivational Telegram Message](https://flows.nodered.org/flow/642ee1a708d9cebeee964c7006e23020) - Recieve a quote at 11am each day to keep me motivated
-* [Get Local Free Listings](url to flow that displays local listings)
-<img src="images/NodeRED3.png" width="30%" height="30%">
-
 <!-- ESP32 -->
 ### ESP32
 You can get really cheap knock off ESP32s on [AliExpress](https://www.aliexpress.com/)<br/>
@@ -191,6 +159,40 @@ Monitor the logs of your device<br/>
 ```idf.py monitor```<br/>
 To exit the monitor us `Ctrl + ]` or `Ctrl` and  `]` at the same time
 
+<!-- Mosquitto -->
+### Mosquitto MQTT Broker
+> MQTT is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. It is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium [[mqtt.org](http://mqtt.org)]. The Mosquitto broker will be installed on your Raspberry Pi as the broker and your ESP devices will be clients. [Learn more here.](http://www.steves-internet-guide.com/mqtt-works/)
+
+Navigate to the terminal and follow these steps for the installation.
+1. Update your Raspberry Pi<br/>
+```sudo apt-get update```
+2. Install Mosquitto<br/>
+```sudo apt-get install mosquitto```
+3. Install Mosquitto Client<br/>
+```sudo apt-get install mosquitto-clients```
+<br/><sup>&Dagger;: Note for later: Port of your Mosquitto Broker, most likely 1883; Server Mosquitto Broker is running on, most likely the ip address of your Raspberry Pi</sup><br/>
+<img src="http://www.steves-internet-guide.com/wp-content/uploads/mqtt-message-flow.jpg" width="30%" height="30%">
+
+<!-- NodeRED -->
+### NodeRED
+>[NodeRED](http://nodered.org) is a low-code programming tool for wiring together hardware devices, APIs and online services for event driven applications. The browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.
+
+[Install NodeRED on your Raspberry Pi](https://nodered.org/docs/getting-started/local)
+
+#### Sourced Flows
+Check out these flows that I found online and modified for my use.
+* [Telegram Live Location](https://github.com/windkh/node-red-contrib-telegrambot/blob/master/examples/livelocation.json)
+* [Raspberry Pi System Statistics](https://flows.nodered.org/flow/c87d62e3b0d9f1ebfbbdf6aa9300c690/in/RV7rLt9tjepZ)
+
+#### Custom Flows
+Details of my custom flows can be found at the links below and in [my collection on Node-RED.](https://flows.nodered.org/collection/RV7rLt9tjepZ)<br/>
+* [Telegram Inline Keyboard](https://flows.nodered.org/flow/c8194f9d056455018d2da8ef7e109733) - A fancy way to select between multiple options with only one command
+* [Daily Motivational Telegram Message](https://flows.nodered.org/flow/642ee1a708d9cebeee964c7006e23020) - Recieve a quote at 11am each day to keep me motivated
+* [Get Local Free Listings](url to flow that displays local listings)
+<img src="images/NodeRED3.png" width="30%" height="30%">
+<img src="images/NodeRED_Flow_LightControl.png" width="30%" height="30%">
+<img src="images/NodeRED_Flow_FreeStuff.png" width="30%" height="30%">
+<img src="images/xxx.png" width="30%" height="30%">
 
 <!-- Telegram -->
 ### Telegram
@@ -232,9 +234,9 @@ Distributed under the MIT License. See `LICENSE` for more information but basica
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Nice README page to refference and get me started](https://github.com/ETS-PoliTO/esp32-sniffer/edit/master/README.md)
-* []()
 
-Links used in the creation of this page:
+<!--
+LINKS USED IN THE CREATION OF THIS PAGE:
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
@@ -246,6 +248,7 @@ Links used in the creation of this page:
 * [Sticky Kit](http://leafo.net/sticky-kit)
 * [JVectorMap](http://jvectormap.com)
 * [Font Awesome](https://fontawesome.com)
+-->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
