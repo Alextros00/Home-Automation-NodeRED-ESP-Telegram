@@ -122,13 +122,12 @@ Navigate to the terminal and follow these steps for the installation.
 >[NodeRED](http://nodered.org) is a low-code programming tool for wiring together hardware devices, APIs and online services for event driven applications. The browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.
 
 [Install NodeRED on your Raspberry Pi](https://nodered.org/docs/getting-started/local)
-#### Dependancies
-* [node-red-contrib-telegrambot](https://flows.nodered.org/node/node-red-contrib-telegrambot) - for using NodeRED with Telegram
-*
+
 #### Sourced Flows
+Check out these flows that I found online and modified for my use.
 * [Telegram Live Location](https://github.com/windkh/node-red-contrib-telegrambot/blob/master/examples/livelocation.json)
 * [Raspberry Pi System Statistics](https://flows.nodered.org/flow/c87d62e3b0d9f1ebfbbdf6aa9300c690/in/RV7rLt9tjepZ)
-*
+
 #### Custom Flows
 Details of my custom flows can be found at the links below and in [my collection on Node-RED.](https://flows.nodered.org/collection/RV7rLt9tjepZ)<br/>
 * [Telegram Inline Keyboard](https://flows.nodered.org/flow/c8194f9d056455018d2da8ef7e109733) - A fancy way to select between multiple options with only one command
