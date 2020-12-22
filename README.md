@@ -181,17 +181,17 @@ Navigate to the terminal and follow these steps for the installation.
 
 #### Flows
 Many of the flows used can be found in [my collection at nodered.org](https://flows.nodered.org/collection/RV7rLt9tjepZ). Here only the different funcitonality NodeRED has provided me will be discussed. Details are provided how the specific flow works are on [my NodeRED page](https://flows.nodered.org/user/Alextros00).
-##### Functionality
-* Light Control: lights can be controlled through a Telegram command, a button by the lamp, a button on my NodeRED Dashboard, and a webhook on my phone's home screen
+
+##### Light Control: lights can be controlled through a Telegram command, a button by the lamp, a button on my NodeRED Dashboard, and a webhook on my phone's home screen
 <p float="middle">
 	<img src="images/NodeRED_Flow_DoorLight.png" width="30%" height="30%" />
 </p>
-* Raspberry Pi Status: The Raspberry Pi 4 has been rumored to overheat. I monitor the temperature and recieve notification and text if it goes to high
-* Local Free Listings: The dashboard displays local free listings from FreeCycle and Craigslist
+Raspberry Pi Status: The Raspberry Pi 4 has been rumored to overheat. I monitor the temperature and recieve notification and text if it goes to high
+Local Free Listings: The dashboard displays local free listings from FreeCycle and Craigslist
 <p float="middle">
 	<img src="images/NodeRED_Flow_FreeStuff.png" width="30%" height="30%" />
 </p>
-* Motivational Screen: The idol screen of my dashboard is a motivational image, quote, and verse that change on regular intervals. I also get a [quote sent to telegram daily.](https://flows.nodered.org/flow/642ee1a708d9cebeee964c7006e23020)
+Motivational Screen: The idol screen of my dashboard is a motivational image, quote, and verse that change on regular intervals. I also get a [quote sent to telegram daily.](https://flows.nodered.org/flow/642ee1a708d9cebeee964c7006e23020)
 
 ##### Flow Gallery
 * [Telegram Inline Keyboard](https://flows.nodered.org/flow/c8194f9d056455018d2da8ef7e109733) - A fancy way to select between multiple options with only one command
