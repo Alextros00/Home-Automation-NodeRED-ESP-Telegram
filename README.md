@@ -182,24 +182,14 @@ Navigate to the terminal and follow these steps for the installation.
 #### Flows
 Many of the flows used can be found in [my collection at nodered.org](https://flows.nodered.org/collection/RV7rLt9tjepZ). Here only the different funcitonality NodeRED has provided me will be discussed. Details are provided how the specific flow works are on [my NodeRED page](https://flows.nodered.org/user/Alextros00).
 
-##### Light Control
-<p align="left">
-  <h5 align="left">Lights can be controled through Telegram or through blah blah</h5>
-	<a float="right" href="https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram">
-    		<img src="images/NodeRED_Flow_DoorLight.png" alt="Image of me laying on the floor covered in electronics" width="50%" height="50%">
-  	</a>
-<p/>
-
-Raspberry Pi Status: The Raspberry Pi 4 has been rumored to overheat. I monitor the temperature and recieve notification and text if it goes to high
-Local Free Listings: The dashboard displays local free listings from FreeCycle and Craigslist
-<p float="middle">
-	<img src="images/NodeRED_Flow_FreeStuff.png" width="30%" height="30%" />
-</p>
-Motivational Screen: The idol screen of my dashboard is a motivational image, quote, and verse that change on regular intervals. I also get a [quote sent to telegram daily.](https://flows.nodered.org/flow/642ee1a708d9cebeee964c7006e23020)
+##### Functionality
+Light Control: lights can be controlled through a Telegram command, a button by the lamp, a button on my NodeRED Dashboard, and a webhook on my phone's home screen
+* Light Control: Lights can be controled through time of day, a [Telegram Command using a inline keyboard](https://flows.nodered.org/flow/c8194f9d056455018d2da8ef7e109733), the NodeRED Dashboard, a webhook on my phone homescreen, or even a good old button by the lamp
+* Raspberry Pi Status: The Raspberry Pi 4 has been rumored to overheat. I monitor the temperature and recieve notification and text if it goes to high
+* Local Free Listings: The dashboard displays local free listings from FreeCycle and Craigslist
+* Motivational Dashboard: When idol the dashboard displays a motivational image, quote and Bible verse that rotate regularly. I also recieve a [daily motivational message.]()
 
 ##### Flow Gallery
-* [Telegram Inline Keyboard](https://flows.nodered.org/flow/c8194f9d056455018d2da8ef7e109733) - A fancy way to select between multiple options with only one command
-* [Daily Motivational Telegram Message]() - Recieve a quote at 11am each day to keep me motivated
 <p float="middle">
   <img src="images/NodeRED3.png" width="30%" height="30%" />
   <img src="images/NodeRED_Flow_webhooks.png" width="30%" height="30%" />
@@ -233,8 +223,6 @@ The system can be utilized in two ways, through the Telegram-Bot or through the 
 Telegram sends me [notifications](#notifications) and I can send it [commands](#commands).
 #### Usage through the NodeRED Dashboard
 The NodeRED Dashboard can be used to control the system through buttons, text boxes and switches, but also displays alot of information.<br/>
-#### Example Scenarios
-Light Control: lights can be controlled through a Telegram command, a button by the lamp, a button on my NodeRED Dashboard, and a webhook on my phone's home screen
 
 <!-- ROADMAP -->
 ## Roadmap
