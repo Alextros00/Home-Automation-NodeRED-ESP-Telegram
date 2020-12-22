@@ -204,7 +204,7 @@ Light Control: lights can be controlled through a Telegram command, a button by 
 <!-- Telegram -->
 ### Telegram
 Telegram adds the ability to control the system from your phone but is not required for use. You could stricktly use the NodeRED dashboard to control your system. In this implementation, Telegram does not directly control any devices but rather goes through NodeRED using the [node-red-contrib-telegrambot](https://flows.nodered.org/node/node-red-contrib-telegrambot) library.<br/>
-#### Commands <br/>
+#### Commands
 * `/water` 	    - records that I drank a bottle of water
 * `/poop` 	    - records that I took a poop
 * `/piss` 	    - records that I took a pee
@@ -213,14 +213,14 @@ Telegram adds the ability to control the system from your phone but is not requi
 * `/lights`	    - displays inline keyboard to choose which light to change and what to do with it
 * `/sleepin`	    - delays the auto turn on of my lights by 30 minutes, twice will do an hour, 3 times no effect
 * `/help` 	    - responds with the Telegram ChatId 
-#### Notifications <br/>
+#### Notifications
 * `Raspberry Pi is over 65 degree C` - Tells me when the Raspberry Pi has reached temperatures over 65C. 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 The system can be utilized in two ways, through the Telegram-Bot or through the NodeRED Dashboard.<br/>
 #### Usage through Telegram
-Telegram sends me [notifications](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/blob/main/README.md#notifications) and I can send it [commands](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/blob/main/README.md#commands).
+Telegram sends me [notifications](#notifications) and I can send it [commands](#commands).
 #### Usage through the NodeRED Dashboard
 The NodeRED Dashboard can be used to control the system through buttons, text boxes and switches, but also displays alot of information.<br/>
 
