@@ -179,16 +179,23 @@ Navigate to the terminal and follow these steps for the installation.
 
 [Install NodeRED on your Raspberry Pi](https://nodered.org/docs/getting-started/local)
 
-#### Sourced Flows
-Check out these flows that I found online and modified for my use.
-* [Telegram Live Location](https://github.com/windkh/node-red-contrib-telegrambot/blob/master/examples/livelocation.json)
-* [Raspberry Pi System Statistics](https://flows.nodered.org/flow/c87d62e3b0d9f1ebfbbdf6aa9300c690/in/RV7rLt9tjepZ)
+#### Flows
+Many of the flows used can be found in [my collection at nodered.org](https://flows.nodered.org/collection/RV7rLt9tjepZ). Here only the different funcitonality NodeRED has provided me will be discussed. Details are provided how the specific flow works are on [my NodeRED page](https://flows.nodered.org/user/Alextros00).
+##### Functionality
+* Light Control: lights can be controlled through a Telegram command, a button by the lamp, a button on my NodeRED Dashboard, and a webhook on my phone's home screen
+<p float="middle">
+	<img src="images/NodeRED_Flow_DoorLight.png" width="30%" height="30%" />
+</p>
+* Raspberry Pi Status: The Raspberry Pi 4 has been rumored to overheat. I monitor the temperature and recieve notification and text if it goes to high
+* Local Free Listings: The dashboard displays local free listings from FreeCycle and Craigslist
+<p float="middle">
+	<img src="images/NodeRED_Flow_FreeStuff.png" width="30%" height="30%" />
+</p>
+* Motivational Screen: The idol screen of my dashboard is a motivational image, quote, and verse that change on regular intervals. I also get a [quote sent to telegram daily.](https://flows.nodered.org/flow/642ee1a708d9cebeee964c7006e23020)
 
-#### Custom Flows
-Details of my custom flows can be found at the links below and in [my collection on Node-RED.](https://flows.nodered.org/collection/RV7rLt9tjepZ)<br/>
+##### Flow Gallery
 * [Telegram Inline Keyboard](https://flows.nodered.org/flow/c8194f9d056455018d2da8ef7e109733) - A fancy way to select between multiple options with only one command
-* [Daily Motivational Telegram Message](https://flows.nodered.org/flow/642ee1a708d9cebeee964c7006e23020) - Recieve a quote at 11am each day to keep me motivated
-* [Get Local Free Listings](url to flow that displays local listings)
+* [Daily Motivational Telegram Message]() - Recieve a quote at 11am each day to keep me motivated
 <p float="middle">
   <img src="images/NodeRED3.png" width="30%" height="30%" />
   <img src="images/NodeRED_Flow_webhooks.png" width="30%" height="30%" />
