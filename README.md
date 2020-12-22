@@ -220,7 +220,7 @@ Telegram adds the ability to control the system from your phone but is not requi
 ## Usage
 The system can be utilized in two ways, through the Telegram-Bot or through the NodeRED Dashboard.<br/>
 #### Usage through Telegram
-Telegram sends me [notifications](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/edit/main/README.md#notifications) and I can send it [commands](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/edit/main/README.md#commands).
+Telegram sends me [notifications](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/blob/main/README.md#notifications) and I can send it [commands](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/blob/main/README.md#commands).
 #### Usage through the NodeRED Dashboard
 The NodeRED Dashboard can be used to control the system through buttons, text boxes and switches, but also displays alot of information.<br/>
 
