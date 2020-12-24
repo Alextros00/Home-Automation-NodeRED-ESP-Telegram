@@ -14,7 +14,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram">
-    <img src="images/ESP32_RelayControl_Hardware.jpg" alt="Image of me laying on the floor covered in electronics" width="80" height="80">
+    <img src="images/ESP32_RelayControl_Hardware.jpg" alt="Image of me laying on the floor covered in electronics" width="30%" height="30%">
   </a>
 
   <h3 align="center">Home Automation</h3>
