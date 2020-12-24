@@ -211,6 +211,7 @@ Telegram adds the ability to control the system from your phone but is not requi
 * `/whoishome` 	    - replys with who is on my home wifi
 * `/alive` 	    - replys with what devices are responding on the system
 * `/lights`	    - displays inline keyboard to choose which light to change and what to do with it
+* `/motivation`     - changes the motivational display on the dashboard and sends motivation to Telegram
 * `/sleepin`	    - delays the auto turn on of my lights by 30 minutes, twice will do an hour, 3 times no effect
 * `/help` 	    - responds with the Telegram ChatId 
 #### Notifications
