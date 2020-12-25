@@ -129,27 +129,7 @@ Some ESP devices that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE<br/>
 #### ESP32 Repos
 1. [Light(Relay) Control over MQTT.]()
 
-#### Configuration (Move this to ESP32 MQTT Relay Control Repo)
-1. Plug in your ESP32 to your laptop and open your command line.
-2. ```cd``` into the project directory.<br/>
-3. Open the configuration menu. It may take a minute to load.<br/>
-   ```idf.py menuconfig```
-4. Go to ```Serial flasher config```
-   	* Set the `Default baud rate` to `115200 baud` for the ESP32
-	* Set ```Default serial port``` and set the port in which your ESP32 is connected<sup>&dagger;</sup><sup>&Dagger;</sup>
-   <br/><sup>&dagger;:Your serial port can be found using [this guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/establish-serial-connection.html).</sup><br/>
-<sup>&Dagger;:One problem I had was that it is not clearly documented that if using windows the port should be configured in the COMX for example COM0</sup><br/>
-6. Click `Save` -> `Ok` -> `Exit` -> `Exit` to get back to the main configuration screen<br/>
-7. Go to `Example Configuration`
-	- Set `WiFI SSID` and `WiFi password` to that of your local 2.4GHz network
-	- Set `Broker URL` to your mqtt server:port. It will look something like `mqtt://@192.168.1.142:1883` if you have no username and password configured for Mosquitto
-	- Enter the `ESP32-X Number` that you are using. This can be left blank and has no impact on the functionality of the code besides messages sent.
-	- Enter the `Relay GPIO Number` or the GPIO that will control the relay. What pin you can use can be found on your device specific pinout.
-	- Select `enter 1 or 2` to decide between subscribing to 1 or 2 relay. Default is 1.
-	- Set the `MQTT Topic to Subscribe To` or recieve messages from
-	- Set the `2nd MQTT Topic to Subscribe To`. Can be left alone if not using.
-	- Set the `MQTT Topic to Publish To` or send messages to
-8. Once done configuring the project exit out of the menu by clicking `Save` -> `Ok` -> `Exit` -> `Exit` -> `Exit` to go back to the terminal
+
 
 #### Flash and Monitor (Copy this to ESP32 MQTT Relay Control Repo)
 Build and flash the project onto your device.<br/>
@@ -248,6 +228,21 @@ Distributed under the MIT License. See `LICENSE` for more information but basica
 ## Acknowledgements
 * [Nice README page I refferenced and got me started](https://github.com/ETS-PoliTO/esp32-sniffer/edit/master/README.md)
 
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/Alextros00/Home-Automation-NodeRED-ESP-Telegram.svg?style=for-the-badge
+[contributors-url]: https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Alextros00/Home-Automation-NodeRED-ESP-Telegram.svg?style=for-the-badge
+[forks-url]: https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/network/members
+[stars-shield]: https://img.shields.io/github/stars/Alextros00/Home-Automation-NodeRED-ESP-Telegram.svg?style=for-the-badge
+[stars-url]: https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Alextros00/Home-Automation-NodeRED-ESP-Telegram.svg?style=for-the-badge
+[issues-url]: https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/issues
+[license-shield]: https://img.shields.io/github/license/Alextros00/Home-Automation-NodeRED-ESP-Telegram.svg?style=for-the-badge
+[license-url]: https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/alex-trostle/
+
 <!--
 LINKS USED IN THE CREATION OF THIS PAGE:
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
@@ -263,17 +258,7 @@ LINKS USED IN THE CREATION OF THIS PAGE:
 * [Font Awesome](https://fontawesome.com)
 -->
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Alextros00/Home-Automation-NodeRED-ESP-Telegram.svg?style=for-the-badge
-[contributors-url]: https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Alextros00/Home-Automation-NodeRED-ESP-Telegram.svg?style=for-the-badge
-[forks-url]: https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/network/members
-[stars-shield]: https://img.shields.io/github/stars/Alextros00/Home-Automation-NodeRED-ESP-Telegram.svg?style=for-the-badge
-[stars-url]: https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Alextros00/Home-Automation-NodeRED-ESP-Telegram.svg?style=for-the-badge
-[issues-url]: https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/issues
-[license-shield]: https://img.shields.io/github/license/Alextros00/Home-Automation-NodeRED-ESP-Telegram.svg?style=for-the-badge
-[license-url]: https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/alex-trostle/
+<!--
+Notes to remember on using Markdown:
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+-->
