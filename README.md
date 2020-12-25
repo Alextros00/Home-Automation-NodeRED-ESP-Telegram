@@ -88,16 +88,15 @@ There were many parts to this project. Some sub-projects that I did in order to 
 
 <!-- GETTING STARTED -->
 ## Getting Started
-These steps will take you through getting your own project up and running. This will take you through getting getting Mosquitto, NodeRED, and ESP32 to control a light.<br/>
-<img src="https://i1.wp.com/randomnerdtutorials.com/wp-content/uploads/2017/01/2output-mqtt.jpg?resize=828%2C132&quality=100&strip=all&ssl=1" width="50%" height="50%">
+These steps will take you through the overall home automation system. The system consists of other repos for specifics linked throughout this README doc.
 
 <!-- Prerequisites -->
 ### Prerequisites
-The software used is free and mostly open source. All will be explained here!<br/>
+The software used is free and mostly open source.<br/>
 It would help to have the hardware below.
 * Laptop
 * Smartphone
-* At least one [ESP32]()
+* At least one [ESP32](https://www.espressif.com/en/products/socs/esp32)
 * [Raspberry Pi 4]() <sup>&dagger;</sup> <sup>&Dagger;</sup> <br/>
 <sup>&dagger;: Raspberry Pi 4 should be running [Raspbian Operating System](https://projects.raspberrypi.org/en/projects/noobs-install)</sup><br/>
 <sup>&Dagger;: Needs to be connected to and using a 2.4GHz network. This is because the ESP32 currently(Dec 2020) cannot connect to 5GHz networks.</sup><br/>
@@ -106,8 +105,6 @@ It would help to have the hardware below.
 ### ESP32
 You can get really cheap knock off ESP32s on [AliExpress](https://www.aliexpress.com/)<br/>
 Some ESP devices that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE<br/>
-#### Hardware Wiring
-Depending on the project specific goal of your ESP32 device depends on how you want to wire it. Here You will be shown how to wire to use your ESP32 to remotly control a light using a relay.
 
 #### ESP-IDF
 1. Setup Toolchain for [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html), [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html) or [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html). If you use a installer package then you can skip to step 6.<br/>
@@ -129,7 +126,10 @@ Depending on the project specific goal of your ESP32 device depends on how you w
 6. Fork my repo and Clone my ESP32 MQTT Light Control repository using the command down below with your user name in place of mine.<br/>
    ```git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32```
 
-#### Configuration
+#### ESP32 Repos
+1. [Light(Relay) Control over MQTT.]()
+
+#### Configuration (Move this to ESP32 MQTT Relay Control Repo)
 1. Plug in your ESP32 to your laptop and open your command line.
 2. ```cd``` into the project directory.<br/>
 3. Open the configuration menu. It may take a minute to load.<br/>
@@ -151,7 +151,7 @@ Depending on the project specific goal of your ESP32 device depends on how you w
 	- Set the `MQTT Topic to Publish To` or send messages to
 8. Once done configuring the project exit out of the menu by clicking `Save` -> `Ok` -> `Exit` -> `Exit` -> `Exit` to go back to the terminal
 
-#### Flash and Monitor
+#### Flash and Monitor (Copy this to ESP32 MQTT Relay Control Repo)
 Build and flash the project onto your device.<br/>
 ```idf.py build & flash```<br/>
 Monitor the logs of your device<br/>
@@ -179,7 +179,7 @@ Navigate to the terminal and follow these steps for the installation.
 [Install NodeRED on your Raspberry Pi](https://nodered.org/docs/getting-started/local)
 
 #### Flows
-Many of the flows used can be found in [my collection at nodered.org](https://flows.nodered.org/collection/RV7rLt9tjepZ). Here only the different funcitonality NodeRED has provided me will be discussed. Details are provided how the specific flow works are on [my NodeRED page](https://flows.nodered.org/user/Alextros00).
+Many of the flows used can be found in [my collection at nodered.org](https://flows.nodered.org/collection/RV7rLt9tjepZ). Here the general functionality of each flow will be described and more details(and the flow itself:) are provided on [my NodeRED page](https://flows.nodered.org/user/Alextros00).
 
 ##### Functionality
 Light Control: lights can be controlled through a Telegram command, a button by the lamp, a button on my NodeRED Dashboard, and a webhook on my phone's home screen
@@ -207,14 +207,20 @@ Telegram adds the ability to control the system from your phone but is not requi
 * `/water` 	    - records that I drank a bottle of water
 * `/poop` 	    - records that I took a poop
 * `/piss` 	    - records that I took a pee
+* `/lights`	    - displays inline keyboard to choose which light to change and what to do with it
+* `/doorlighton`    - turns on door light... I know its redundant just use `/lights`
+* `/doorlightoff`   - turns off door light... I know its redundant just use `/lights`
+* `/bedsidelalmpon` - turns on bedside light... I know its redundant just use `/lights`
+* `/bedsidelalmpoff`- turns off bedside light... I know its redundant just use `/lights`
+* `/sleepin`	    - delays the auto turn on of my lights by 30 minutes
+* `/motivation`     - changes the motivational display on the dashboard and sends motivational image over Telegram
 * `/whoishome` 	    - replys with who is on my home wifi
 * `/alive` 	    - replys with what devices are responding on the system
-* `/lights`	    - displays inline keyboard to choose which light to change and what to do with it
-* `/motivation`     - changes the motivational display on the dashboard and sends motivation to Telegram
-* `/sleepin`	    - delays the auto turn on of my lights by 30 minutes, twice will do an hour, 3 times no effect
 * `/help` 	    - responds with the Telegram ChatId 
 #### Notifications
-* `Raspberry Pi is over 65 degree C` - Tells me when the Raspberry Pi has reached temperatures over 65C. 
+* `Raspberry Pi is over 65 degree C` - Tells me when the Raspberry Pi has reached temperatures over 65C.
+* `Motivational Image` - at 11am daily I recieve a motivational quote to keep me going until lunch!
+* `Motivational Quote` - at 2pm daily I recieve a motivational image to keep me going until dinner!
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -227,7 +233,7 @@ The NodeRED Dashboard can be used to control the system through buttons, text bo
 <!-- ROADMAP -->
 ## Roadmap
 See the [open issues](https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/issues) for a list of proposed features (and known issues).<br/>
-This project will continue to grow in my free time to automate everything... except working out... that you just have to do.
+This project will continue to grow in my free time to automate everything... except for working out... that I just have to do.
 
 <!-- LICENSE -->
 ## License
@@ -240,7 +246,7 @@ Distributed under the MIT License. See `LICENSE` for more information but basica
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Nice README page to refference and get me started](https://github.com/ETS-PoliTO/esp32-sniffer/edit/master/README.md)
+* [Nice README page I refferenced and got me started](https://github.com/ETS-PoliTO/esp32-sniffer/edit/master/README.md)
 
 <!--
 LINKS USED IN THE CREATION OF THIS PAGE:
