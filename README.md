@@ -69,7 +69,7 @@ This project is about automating all aspects of my home that I can. Why turn on 
 This project consists of many smaller projects. Here is where they are all put together and additional features are added.
 
 ### Built With
-There were many parts to this project. Some sub-projects that I did in order to build up to this complexity can be found on my [here](https://github.com/Alextros00).
+There were many parts to this project. Some sub-projects that I did in order to build up to this complexity can be found on [my github](https://github.com/Alextros00).
 
 #### Main Components
 * [Raspberry Pi 4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/?resellerType=home&variant=raspberry-pi-4-model-b-8gb). <sup>&dagger;</sup>
@@ -98,7 +98,7 @@ It would help to have the hardware below.
 * Laptop
 * Smartphone
 * At least one [ESP32](https://www.espressif.com/en/products/socs/esp32)
-* [Raspberry Pi 4]() <sup>&dagger;</sup> <sup>&Dagger;</sup> <br/>
+* [Raspberry Pi 4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/?variant=raspberry-pi-4-model-b-8gb) <sup>&dagger;</sup> <sup>&Dagger;</sup> <br/>
 <sup>&dagger;: Raspberry Pi 4 should be running [Raspbian Operating System](https://projects.raspberrypi.org/en/projects/noobs-install)</sup><br/>
 <sup>&Dagger;: Needs to be connected to and using a 2.4GHz network. This is because the ESP32 currently(Dec 2020) cannot connect to 5GHz networks.</sup><br/>
 
@@ -108,7 +108,8 @@ You can get really cheap knock off ESP32s on [AliExpress](https://www.aliexpress
 Some ESP devices that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE<br/>
 
 #### ESP-IDF
-1. Setup Toolchain for [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html), [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html) or [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html). If you use a installer package then you can skip to step 6.<br/>
+1. Setup Toolchain for [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html), [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html) or [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html). <br/>
+_If you use a installer package then you can skip to step 6_.<br/>
 2.  Get ESP-IDF.
 	Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries.<br/>
   	```cd ~/esp```<br/>
@@ -124,20 +125,12 @@ Some ESP devices that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE<br/>
    ```export IDF_PATH=~/esp/esp-idf```<br/>
    ```export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin```<br/>
 <sup>&Dagger;:Check the [official site](https://esp-idf.readthedocs.io/en/latest/get-started/index.html) for more info.</sup>
-6. Fork my repo and Clone my ESP32 MQTT Light Control repository using the command down below with your user name in place of mine.<br/>
+6. Fork my repo and Clone my ESP32 MQTT Light Control repository using this command.<br/>
    ```git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32```
 
 #### ESP32 Repos
-1. [Light(Relay) Control over MQTT.]()
+1. [Light(Relay) Control over MQTT.](https://github.com/Alextros00/ESP32-MQTT-Relay-Control)
 
-
-
-#### Flash and Monitor (Copy this to ESP32 MQTT Relay Control Repo)
-Build and flash the project onto your device.<br/>
-```idf.py build & flash```<br/>
-Monitor the logs of your device<br/>
-```idf.py monitor```<br/>
-To exit the monitor us `Ctrl + ]` or `Ctrl` and  `]` at the same time
 
 <!-- Mosquitto -->
 ### Mosquitto MQTT Broker
@@ -197,6 +190,7 @@ Telegram adds the ability to control the system from your phone but is not requi
 * `/motivation`     - changes the motivational display on the dashboard and sends motivational image over Telegram
 * `/whoishome` 	    - replys with who is on my home wifi
 * `/alive` 	    - replys with what devices are responding on the system
+* `/temp`	    - replys with the temp of each device that is connected
 * `/help` 	    - responds with the Telegram ChatId 
 #### Notifications
 * `Raspberry Pi is over 65 degree C` - Tells me when the Raspberry Pi has reached temperatures over 65C.
@@ -210,6 +204,7 @@ The system can be utilized in two ways, through the Telegram-Bot or through the 
 Telegram sends me [notifications](#notifications) and I can send it [commands](#commands).
 #### Usage through the NodeRED Dashboard
 The NodeRED Dashboard can be used to control the system through buttons, text boxes and switches, but also displays alot of information.<br/>
+
 
 <!-- ROADMAP -->
 ## Roadmap
