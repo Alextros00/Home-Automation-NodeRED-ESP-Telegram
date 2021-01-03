@@ -125,8 +125,15 @@ _If you use a installer package then you can skip to step 6_.<br/>
    ```export IDF_PATH=~/esp/esp-idf```<br/>
    ```export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin```<br/>
 <sup>&Dagger;:Check the [official site](https://esp-idf.readthedocs.io/en/latest/get-started/index.html) for more info.</sup>
-6. Fork my repo and Clone my ESP32 MQTT Light Control repository using this command.<br/>
-   ```git clone -b --recursive https://github.com/Alextros00/Home-Automation-NodeRED-ESP-Telegram/ESP32```
+6. Fork my repo and Clone my ESP32 MQTT Light Control repository using this command. Replace the xxxxx with the repo.<br/>
+   ```git clone -b --recursive https://github.com/Alextros00/xxxxxxxxxxx```
+
+##### Commands to Remember
+Build and flash the project onto your device.<br/>
+```idf.py build & flash```<br/>
+Monitor the logs of your device<br/>
+```idf.py monitor```<br/>
+To exit the monitor us `Ctrl + ]` or `Ctrl` and  `]` at the same time
 
 #### ESP32 Repos
 1. [Light(Relay) Control over MQTT.](https://github.com/Alextros00/ESP32-MQTT-Relay-Control)
