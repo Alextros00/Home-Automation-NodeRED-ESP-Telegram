@@ -108,24 +108,9 @@ You can get really cheap knock off ESP32s on [AliExpress](https://www.aliexpress
 Some ESP devices that I use are: ESP-WROOM-32, ESP-32S, ESP32-CAM, ESP-EYE<br/>
 
 #### ESP-IDF
-1. Setup Toolchain for [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html), [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html) or [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html). <br/>
-_If you use a installer package then you can skip to step 6_.<br/>
-2.  Get ESP-IDF.
-	Besides the toolchain (that contains programs to compile and build the application), you also need ESP32 specific API / libraries.<br/>
-  	```cd ~/esp```<br/>
-	```git clone --recursive https://github.com/espressif/esp-idf.git```<br/>
-3. Setup Path to ESP-IDF.
-	The toolchain programs access ESP-IDF using IDF_PATH environment variable.<br/>
-	This variable should be set up on your PC, otherwise projects will not build.<br/>
-	* [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-windows)
-	* [Linux & Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/add-idf_path-to-profile.html#add-idf-path-to-profile-linux-macos)
-4. Install Required Python Packages.<br/>
-   ```python -m pip install --user -r $IDF_PATH/requirements.txt```
-5. Export the path<br/>
-   ```export IDF_PATH=~/esp/esp-idf```<br/>
-   ```export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin```<br/>
+1. Use the installer for [Windows](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/windows-setup.html), [Linux](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-setup.html) or [Mac OS](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/macos-setup.html). <br/>
 <sup>&Dagger;:Check the [official site](https://esp-idf.readthedocs.io/en/latest/get-started/index.html) for more info.</sup>
-6. Fork my repo and Clone my ESP32 MQTT Light Control repository using this command. Replace the xxxxx with the repo.<br/>
+2. Fork my repo and Clone my ESP32 MQTT Light Control repository using this command. Replace the xxxxx with the repo.<br/>
    ```git clone -b --recursive https://github.com/Alextros00/xxxxxxxxxxx```
 
 ##### Commands to Remember
